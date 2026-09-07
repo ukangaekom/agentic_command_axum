@@ -3,13 +3,16 @@ name = "agentic_command_axum"
 version = "0.1.0"
 edition = "2024"
 
+[profile.release]
+codegen-units = 1
+lto = "fat"
+opt-level = 3
 
 [dependencies]
-axum = "0.8" # Check crates.io for the latest
+axum = "0.8"
 tokio = { version = "1", features = ["full"] }
-tower-http = {version="0.6.6", features=["cors"]}
-
+tower-http = { version = "0.6.6", features = ["cors"] }
 
 [[bin]]
 name = "agentic_command_axum"
-path = "api/main.rs"
+path = "src/main.rs"
