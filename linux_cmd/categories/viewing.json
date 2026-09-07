@@ -1,0 +1,722 @@
+[
+  {
+    "id": "cmd-009",
+    "command": "cat logfile.txt",
+    "category": "Viewing",
+    "description": "Displays the contents of logfile.txt.",
+    "example_output": "Log entry: 2025-05-21 11:02:00",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-010",
+    "command": "less largefile.txt",
+    "category": "Viewing",
+    "description": "Views largefile.txt with pagination.",
+    "example_output": "[Interactive display of file content]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-011",
+    "command": "head -n 5 access.log",
+    "category": "Viewing",
+    "description": "Displays the first 5 lines of access.log.",
+    "example_output": "[First 5 lines of file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "cmd-012",
+    "command": "tail -n 10 error.log",
+    "category": "Viewing",
+    "description": "Displays the last 10 lines of error.log.",
+    "example_output": "[Last 10 lines of file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tail.1.html"
+  },
+  {
+    "id": "cmd-039",
+    "command": "cat file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Concatenates and displays contents of file1.txt and file2.txt.",
+    "example_output": "Content of file1\nContent of file2",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-040",
+    "command": "less -N logfile.txt",
+    "category": "Viewing",
+    "description": "Views logfile.txt with line numbers.",
+    "example_output": "[Interactive display with line numbers]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-041",
+    "command": "head access.log",
+    "category": "Viewing",
+    "description": "Displays the first 10 lines of access.log.",
+    "example_output": "[First 10 lines of file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "cmd-042",
+    "command": "tail -f error.log",
+    "category": "Viewing",
+    "description": "Monitors error.log in real-time.",
+    "example_output": "[Live updates of new lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tail.1.html"
+  },
+  {
+    "id": "cmd-067",
+    "command": "cat -n script.sh",
+    "category": "Viewing",
+    "description": "Displays script.sh with line numbers.",
+    "example_output": "1 #!/bin/bash\n2 echo 'Hello, World!'",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-068",
+    "command": "less +G logfile.txt",
+    "category": "Viewing",
+    "description": "Opens logfile.txt in less, starting at the end.",
+    "example_output": "[Interactive display from end]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-069",
+    "command": "head -n 20 access.log",
+    "category": "Viewing",
+    "description": "Displays the first 20 lines of access.log.",
+    "example_output": "[First 20 lines of file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "cmd-070",
+    "command": "tail -n +2 error.log",
+    "category": "Viewing",
+    "description": "Displays error.log starting from the second line.",
+    "example_output": "[All lines except the first]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tail.1.html"
+  },
+  {
+    "id": "cmd-079",
+    "command": "cat > newfile.txt",
+    "category": "Viewing",
+    "description": "Creates or overwrites newfile.txt with input from stdin (Ctrl+D to end).",
+    "example_output": "[No output, waits for input]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-080",
+    "command": "less +F logfile.txt",
+    "category": "Viewing",
+    "description": "Monitors logfile.txt in less, similar to tail -f.",
+    "example_output": "[Live updates of new lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-081",
+    "command": "head -c 100 file.txt",
+    "category": "Viewing",
+    "description": "Displays the first 100 bytes of file.txt.",
+    "example_output": "[First 100 bytes of file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "cmd-082",
+    "command": "tail -n 5 access.log",
+    "category": "Viewing",
+    "description": "Displays the last 5 lines of access.log.",
+    "example_output": "[Last 5 lines of file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tail.1.html"
+  },
+  {
+    "id": "cmd-109",
+    "command": "cat << EOF > script.sh",
+    "category": "Viewing",
+    "description": "Creates script.sh with input until 'EOF' is entered.",
+    "example_output": "[No output, waits for input]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-110",
+    "command": "less -i logfile.txt",
+    "category": "Viewing",
+    "description": "Views logfile.txt in less with case-insensitive search.",
+    "example_output": "[Interactive display with search]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-111",
+    "command": "head -n -5 access.log",
+    "category": "Viewing",
+    "description": "Displays all but the last 5 lines of access.log.",
+    "example_output": "[All lines except last 5]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "cmd-112",
+    "command": "tail -q -n 3 file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Displays the last 3 lines of file1.txt and file2.txt without headers.",
+    "example_output": "[Last 3 lines of each file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tail.1.html"
+  },
+  {
+    "id": "cmd-136",
+    "command": "cat -s file.txt",
+    "category": "Viewing",
+    "description": "Displays file.txt, suppressing multiple blank lines.",
+    "example_output": "[File content with single blank lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-137",
+    "command": "less -M logfile.txt",
+    "category": "Viewing",
+    "description": "Views logfile.txt in less with verbose status.",
+    "example_output": "[Interactive display with status line]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-138",
+    "command": "head -q -n 2 file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Displays the first 2 lines of file1.txt and file2.txt without headers.",
+    "example_output": "[First 2 lines of each file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "cmd-139",
+    "command": "tail -v -n 2 error.log",
+    "category": "Viewing",
+    "description": "Displays the last 2 lines of error.log with file headers.",
+    "example_output": "==> error.log <==\n[Last 2 lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tail.1.html"
+  },
+  {
+    "id": "cmd-171",
+    "command": "cat -b file.txt",
+    "category": "Viewing",
+    "description": "Displays file.txt with non-blank lines numbered.",
+    "example_output": "1 Content of line\n2 Another line",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-172",
+    "command": "less -S logfile.txt",
+    "category": "Viewing",
+    "description": "Views logfile.txt in less without wrapping long lines.",
+    "example_output": "[Interactive display without line wrap]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-173",
+    "command": "head -v access.log",
+    "category": "Viewing",
+    "description": "Displays the first 10 lines of access.log with a file header.",
+    "example_output": "==> access.log <==\n[First 10 lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "cmd-174",
+    "command": "tail -c 100 error.log",
+    "category": "Viewing",
+    "description": "Displays the last 100 bytes of error.log.",
+    "example_output": "[Last 100 bytes of file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tail.1.html"
+  },
+  {
+    "id": "cmd-175",
+    "command": "cat -e file.txt",
+    "category": "Viewing",
+    "description": "Displays file.txt with end-of-line markers ($) and non-printable characters.",
+    "example_output": "Line 1$\nLine 2$",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-176",
+    "command": "less -r logfile.txt",
+    "category": "Viewing",
+    "description": "Views logfile.txt in less, preserving raw control characters.",
+    "example_output": "[Interactive display with raw characters]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-177",
+    "command": "head -n 3 file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Displays the first 3 lines of file1.txt and file2.txt with headers.",
+    "example_output": "==> file1.txt <==\n[3 lines]\n==> file2.txt <==\n[3 lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/head.1.html"
+  },
+  {
+    "id": "cmd-178",
+    "command": "tail -n 0 -f error.log",
+    "category": "Viewing",
+    "description": "Monitors error.log for new lines, starting with no initial output.",
+    "example_output": "[Live updates of new lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tail.1.html"
+  },
+  {
+    "id": "cmd-179",
+    "command": "cat -t file.txt",
+    "category": "Viewing",
+    "description": "Displays file.txt with tabs shown as ^I.",
+    "example_output": "Line^Iwith^Itabs",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-180",
+    "command": "less -u logfile.txt",
+    "category": "Viewing",
+    "description": "Views logfile.txt in less, treating backspaces as non-destructive.",
+    "example_output": "[Interactive display with backspace handling]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-233",
+    "command": "cat -v file.txt",
+    "category": "Viewing",
+    "description": "Displays file.txt with non-printable characters visible.",
+    "example_output": "Line^Mwith^@control chars",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cat.1.html"
+  },
+  {
+    "id": "cmd-234",
+    "command": "less -X logfile.txt",
+    "category": "Viewing",
+    "description": "Views logfile.txt in less without clearing the screen on exit.",
+    "example_output": "[Interactive display]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/less.1.html"
+  },
+  {
+    "id": "cmd-258",
+    "command": "zcat logfile.gz",
+    "category": "Viewing",
+    "description": "Displays the contents of compressed logfile.gz without uncompressing.",
+    "example_output": "Log entry: 2025-05-21 11:02:00",
+    "man_reference": "https://man7.org/linux/man-pages/man1/zcat.1.html"
+  },
+  {
+    "id": "cmd-259",
+    "command": "zless logfile.gz",
+    "category": "Viewing",
+    "description": "Views compressed logfile.gz with pagination.",
+    "example_output": "[Interactive display of compressed file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/zless.1.html"
+  },
+  {
+    "id": "cmd-260",
+    "command": "od -c file.bin",
+    "category": "Viewing",
+    "description": "Dumps file.bin in octal format with ASCII representation.",
+    "example_output": "0000000   H   e   l   l   o   \n\n0000006",
+    "man_reference": "https://man7.org/linux/man-pages/man1/od.1.html"
+  },
+  {
+    "id": "cmd-261",
+    "command": "strings /bin/ls",
+    "category": "Viewing",
+    "description": "Extracts printable strings from the binary /bin/ls.",
+    "example_output": "GNU coreutils\nls\n--color",
+    "man_reference": "https://man7.org/linux/man-pages/man1/strings.1.html"
+  },
+  {
+    "id": "cmd-262",
+    "command": "hexdump -C file.bin",
+    "category": "Viewing",
+    "description": "Displays file.bin in hexadecimal and ASCII format.",
+    "example_output": "00000000  48 65 6c 6c 6f 0a  |Hello.|\n00000006",
+    "man_reference": "https://man7.org/linux/man-pages/man1/hexdump.1.html"
+  },
+  {
+    "id": "cmd-290",
+    "command": "fmt -w 80 file.txt",
+    "category": "Viewing",
+    "description": "Reformats file.txt to wrap lines at 80 characters.",
+    "example_output": "[Reformatted text output]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fmt.1.html"
+  },
+  {
+    "id": "cmd-291",
+    "command": "nl file.txt",
+    "category": "Viewing",
+    "description": "Numbers the lines of file.txt.",
+    "example_output": "1 Line one\n2 Line two",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nl.1.html"
+  },
+  {
+    "id": "cmd-292",
+    "command": "wc -l file.txt",
+    "category": "Viewing",
+    "description": "Counts the number of lines in file.txt.",
+    "example_output": "10 file.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/wc.1.html"
+  },
+  {
+    "id": "cmd-293",
+    "command": "tac file.txt",
+    "category": "Viewing",
+    "description": "Displays file.txt in reverse line order.",
+    "example_output": "Last line\nFirst line",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tac.1.html"
+  },
+  {
+    "id": "cmd-309",
+    "command": "colrm 1 5 < file.txt",
+    "category": "Viewing",
+    "description": "Removes columns 1 through 5 from file.txt.",
+    "example_output": "[Text with columns 1-5 removed]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/colrm.1.html"
+  },
+  {
+    "id": "cmd-310",
+    "command": "expand file.txt",
+    "category": "Viewing",
+    "description": "Converts tabs to spaces in file.txt.",
+    "example_output": "[Text with tabs replaced by spaces]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/expand.1.html"
+  },
+  {
+    "id": "cmd-311",
+    "command": "unexpand file.txt",
+    "category": "Viewing",
+    "description": "Converts spaces to tabs in file.txt.",
+    "example_output": "[Text with spaces replaced by tabs]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/unexpand.1.html"
+  },
+  {
+    "id": "cmd-312",
+    "command": "cut -d ',' -f 1 file.csv",
+    "category": "Viewing",
+    "description": "Extracts the first field from comma-separated file.csv.",
+    "example_output": "field1\nfield2",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cut.1.html"
+  },
+  {
+    "id": "cmd-325",
+    "command": "pr -t file.txt",
+    "category": "Viewing",
+    "description": "Formats file.txt for printing without headers or footers.",
+    "example_output": "[Formatted text output]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pr.1.html"
+  },
+  {
+    "id": "cmd-326",
+    "command": "fold -w 80 file.txt",
+    "category": "Viewing",
+    "description": "Wraps lines in file.txt to 80 characters.",
+    "example_output": "[Wrapped text output]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fold.1.html"
+  },
+  {
+    "id": "cmd-327",
+    "command": "sort file.txt",
+    "category": "Viewing",
+    "description": "Sorts the lines of file.txt alphabetically.",
+    "example_output": "[Sorted text output]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/sort.1.html"
+  },
+  {
+    "id": "cmd-328",
+    "command": "uniq file.txt",
+    "category": "Viewing",
+    "description": "Removes duplicate consecutive lines from file.txt.",
+    "example_output": "[Text with duplicates removed]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uniq.1.html"
+  },
+  {
+    "id": "cmd-329",
+    "command": "comm file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Compares two sorted files, showing unique and common lines.",
+    "example_output": "[Columns: unique to file1, unique to file2, common]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/comm.1.html"
+  },
+  {
+    "id": "cmd-344",
+    "command": "wc -w file.txt",
+    "category": "Viewing",
+    "description": "Counts the number of words in file.txt.",
+    "example_output": "50 file.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/wc.1.html"
+  },
+  {
+    "id": "cmd-345",
+    "command": "wc -c file.txt",
+    "category": "Viewing",
+    "description": "Counts the number of bytes in file.txt.",
+    "example_output": "1024 file.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/wc.1.html"
+  },
+  {
+    "id": "cmd-346",
+    "command": "paste file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Merges lines of file1.txt and file2.txt side by side.",
+    "example_output": "line1\tlineA\nline2\tlineB",
+    "man_reference": "https://man7.org/linux/man-pages/man1/paste.1.html"
+  },
+  {
+    "id": "cmd-347",
+    "command": "join file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Joins lines of two sorted files on a common field.",
+    "example_output": "1 field1 fieldA\n2 field2 fieldB",
+    "man_reference": "https://man7.org/linux/man-pages/man1/join.1.html"
+  },
+  {
+    "id": "cmd-373",
+    "command": "zcmp file1.gz file2.gz",
+    "category": "Viewing",
+    "description": "Compares two compressed files without decompressing.",
+    "example_output": "[No output if identical, diff-like output if different]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/zcmp.1.html"
+  },
+  {
+    "id": "cmd-374",
+    "command": "zdiff file1.gz file2.gz",
+    "category": "Viewing",
+    "description": "Shows differences between two compressed files.",
+    "example_output": "1c1\n< Line 1\n> Line A",
+    "man_reference": "https://man7.org/linux/man-pages/man1/zdiff.1.html"
+  },
+  {
+    "id": "cmd-375",
+    "command": "xxd -r -p hexdump.txt file.bin",
+    "category": "Viewing",
+    "description": "Converts a hexdump in hexdump.txt back to binary file.bin.",
+    "example_output": "[No output, creates file.bin]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/xxd.1.html"
+  },
+  {
+    "id": "cmd-376",
+    "command": "base64 file.bin",
+    "category": "Viewing",
+    "description": "Encodes file.bin to base64 and outputs to stdout.",
+    "example_output": "SGVsbG8K",
+    "man_reference": "https://man7.org/linux/man-pages/man1/base64.1.html"
+  },
+  {
+    "id": "cmd-377",
+    "command": "base64 -d encoded.txt",
+    "category": "Viewing",
+    "description": "Decodes base64 content from encoded.txt to stdout.",
+    "example_output": "[Decoded binary or text]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/base64.1.html"
+  },
+  {
+    "id": "cmd-378",
+    "command": "od -t x4 file.bin",
+    "category": "Viewing",
+    "description": "Dumps file.bin in hexadecimal format, 4 bytes per group.",
+    "example_output": "0000000 6c6c6548 00000a6f\n0000010",
+    "man_reference": "https://man7.org/linux/man-pages/man1/od.1.html"
+  },
+  {
+    "id": "cmd-379",
+    "command": "zmore logfile.gz",
+    "category": "Viewing",
+    "description": "Views compressed logfile.gz with pagination, similar to more.",
+    "example_output": "[Interactive display of compressed file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/zmore.1.html"
+  },
+  {
+    "id": "cmd-403",
+    "command": "xxd file.bin",
+    "category": "Viewing",
+    "description": "Creates a hexadecimal dump of file.bin.",
+    "example_output": "00000000: 4865 6c6c 6f0a  Hello.\n00000006",
+    "man_reference": "https://man7.org/linux/man-pages/man1/xxd.1.html"
+  },
+  {
+    "id": "cmd-431",
+    "command": "col -b < file.txt",
+    "category": "Viewing",
+    "description": "Filters file.txt to remove backspaces and their preceding characters.",
+    "example_output": "[Text without backspaces]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/col.1.html"
+  },
+  {
+    "id": "cmd-432",
+    "command": "tsort file.txt",
+    "category": "Viewing",
+    "description": "Performs a topological sort on the input from file.txt.",
+    "example_output": "[Sorted dependency order]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tsort.1.html"
+  },
+  {
+    "id": "cmd-433",
+    "command": "look word file.txt",
+    "category": "Viewing",
+    "description": "Displays lines in file.txt starting with 'word'.",
+    "example_output": "word1 definition\nword2 definition",
+    "man_reference": "https://man7.org/linux/man-pages/man1/look.1.html"
+  },
+  {
+    "id": "cmd-477",
+    "command": "hexdump -ve '/1 \"%02x\"' file.bin",
+    "category": "Viewing",
+    "description": "Formats file.bin as a single line of hex bytes.",
+    "example_output": "48656c6c6f0a",
+    "man_reference": "https://man7.org/linux/man-pages/man1/hexdump.1.html"
+  },
+  {
+    "id": "cmd-478",
+    "command": "strings -n 10 /bin/ls",
+    "category": "Viewing",
+    "description": "Extracts strings of 10 or more characters from /bin/ls.",
+    "example_output": "GNU coreutils\n--color=auto",
+    "man_reference": "https://man7.org/linux/man-pages/man1/strings.1.html"
+  },
+  {
+    "id": "cmd-479",
+    "command": "rev file.txt",
+    "category": "Viewing",
+    "description": "Reverses the characters in each line of file.txt.",
+    "example_output": "olleH\n!dlroW",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rev.1.html"
+  },
+  {
+    "id": "cmd-518",
+    "command": "zstdcat file.txt.zst",
+    "category": "Viewing",
+    "description": "Displays the contents of a Zstandard-compressed file.txt.zst.",
+    "example_output": "[Contents of file.txt]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/zstd.1.html"
+  },
+  {
+    "id": "cmd-520",
+    "command": "xzcat file.txt.xz",
+    "category": "Viewing",
+    "description": "Displays the contents of an XZ-compressed file.txt.xz.",
+    "example_output": "[Contents of file.txt]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/xz.1.html"
+  },
+  {
+    "id": "cmd-522",
+    "command": "lzcat file.txt.lz",
+    "category": "Viewing",
+    "description": "Displays the contents of an Lzip-compressed file.txt.lz.",
+    "example_output": "[Contents of file.txt]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lzip.1.html"
+  },
+  {
+    "id": "cmd-551",
+    "command": "xxd -i file.txt",
+    "category": "Viewing",
+    "description": "Generates a C-style include file with a hex array from file.txt.",
+    "example_output": "unsigned char file_txt[] = {\n  0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x0a\n};\nunsigned int file_txt_len = 6;",
+    "man_reference": "https://man7.org/linux/man-pages/man1/xxd.1.html"
+  },
+  {
+    "id": "cmd-552",
+    "command": "od -A d -t d4 file.bin",
+    "category": "Viewing",
+    "description": "Dumps file.bin as decimal 4-byte integers with decimal offsets.",
+    "example_output": "0000000 1214606444\n0000004 1684828783\n0000008",
+    "man_reference": "https://man7.org/linux/man-pages/man1/od.1.html"
+  },
+  {
+    "id": "cmd-553",
+    "command": "hexdump -C -n 16 file.bin",
+    "category": "Viewing",
+    "description": "Displays the first 16 bytes of file.bin in hex and ASCII.",
+    "example_output": "00000000  48 65 6c 6c 6f 20 77 6f  72 6c 64 0a 00 00 00 00  |Hello world.....|\n00000010",
+    "man_reference": "https://man7.org/linux/man-pages/man1/hexdump.1.html"
+  },
+  {
+    "id": "cmd-554",
+    "command": "nl -w 2 -s ': ' file.txt",
+    "category": "Viewing",
+    "description": "Numbers lines in file.txt with 2-digit width and ': ' separator.",
+    "example_output": " 1: Line one\n 2: Line two",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nl.1.html"
+  },
+  {
+    "id": "cmd-555",
+    "command": "expand -t 4 file.txt",
+    "category": "Viewing",
+    "description": "Converts tabs to 4 spaces in file.txt.",
+    "example_output": "[Text with tabs replaced by 4 spaces]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/expand.1.html"
+  },
+  {
+    "id": "cmd-556",
+    "command": "unexpand -t 4 file.txt",
+    "category": "Viewing",
+    "description": "Converts 4-space sequences to tabs in file.txt.",
+    "example_output": "[Text with spaces replaced by tabs]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/unexpand.1.html"
+  },
+  {
+    "id": "cmd-557",
+    "command": "fmt -s file.txt",
+    "category": "Viewing",
+    "description": "Reformats file.txt, splitting long lines without joining short ones.",
+    "example_output": "[Reformatted text with split lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fmt.1.html"
+  },
+  {
+    "id": "cmd-558",
+    "command": "pr -d file.txt",
+    "category": "Viewing",
+    "description": "Formats file.txt for printing with double spacing.",
+    "example_output": "[Double-spaced text output]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pr.1.html"
+  },
+  {
+    "id": "cmd-559",
+    "command": "fold -s -w 80 file.txt",
+    "category": "Viewing",
+    "description": "Wraps file.txt at 80 characters, breaking at spaces.",
+    "example_output": "[Text wrapped at 80 characters]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fold.1.html"
+  },
+  {
+    "id": "cmd-560",
+    "command": "cut -c 1-10 file.txt",
+    "category": "Viewing",
+    "description": "Extracts the first 10 characters of each line in file.txt.",
+    "example_output": "[First 10 characters per line]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cut.1.html"
+  },
+  {
+    "id": "cmd-561",
+    "command": "sort -R file.txt",
+    "category": "Viewing",
+    "description": "Randomly shuffles the lines of file.txt.",
+    "example_output": "[Randomly ordered lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/sort.1.html"
+  },
+  {
+    "id": "cmd-562",
+    "command": "uniq -c file.txt",
+    "category": "Viewing",
+    "description": "Counts occurrences of each unique line in file.txt.",
+    "example_output": "2 Line one\n1 Line two",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uniq.1.html"
+  },
+  {
+    "id": "cmd-563",
+    "command": "comm -12 file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Shows lines common to both sorted files file1.txt and file2.txt.",
+    "example_output": "[Common lines]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/comm.1.html"
+  },
+  {
+    "id": "cmd-564",
+    "command": "paste -s file.txt",
+    "category": "Viewing",
+    "description": "Joins all lines of file.txt into a single line with tabs.",
+    "example_output": "Line one\tLine two",
+    "man_reference": "https://man7.org/linux/man-pages/man1/paste.1.html"
+  },
+  {
+    "id": "cmd-565",
+    "command": "join -t ',' file1.txt file2.txt",
+    "category": "Viewing",
+    "description": "Joins two sorted files on a common field using comma as delimiter.",
+    "example_output": "1,field1,fieldA\n2,field2,fieldB",
+    "man_reference": "https://man7.org/linux/man-pages/man1/join.1.html"
+  }
+]

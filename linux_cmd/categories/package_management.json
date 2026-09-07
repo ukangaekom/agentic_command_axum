@@ -1,0 +1,314 @@
+[
+  {
+    "id": "cmd-019",
+    "command": "apt update",
+    "category": "Package Management",
+    "description": "Updates package lists for upgrades on Debian-based systems.",
+    "example_output": "Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease\nReading package lists... Done",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-020",
+    "command": "apt install nginx",
+    "category": "Package Management",
+    "description": "Installs the nginx web server on Debian-based systems.",
+    "example_output": "Reading package lists... Done\nBuilding dependency tree\nSetting up nginx (1.18.0-6ubuntu14)...",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-021",
+    "command": "yum update",
+    "category": "Package Management",
+    "description": "Updates package lists for upgrades on CentOS/RHEL systems.",
+    "example_output": "Loaded plugins: fastestmirror\nDetermining fastest mirrors\nNo packages marked for update",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-022",
+    "command": "dnf install python3",
+    "category": "Package Management",
+    "description": "Installs Python 3 on Fedora-based systems.",
+    "example_output": "Installing: python3-3.9.6-2.fc34.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-048",
+    "command": "apt upgrade",
+    "category": "Package Management",
+    "description": "Upgrades installed packages to their latest versions on Debian-based systems.",
+    "example_output": "Reading package lists... Done\n0 upgraded, 0 newly installed, 0 to remove",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-049",
+    "command": "yum install httpd",
+    "category": "Package Management",
+    "description": "Installs the Apache web server on CentOS/RHEL systems.",
+    "example_output": "Installing: httpd-2.4.46-1.el8.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-050",
+    "command": "dnf update",
+    "category": "Package Management",
+    "description": "Updates package lists and upgrades packages on Fedora-based systems.",
+    "example_output": "Last metadata expiration check: 0:00:01 ago\nNo packages marked for update",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-089",
+    "command": "apt autoremove",
+    "category": "Package Management",
+    "description": "Removes unused dependencies on Debian-based systems.",
+    "example_output": "Reading package lists... Done\n0 to remove, 0 not upgraded.",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-090",
+    "command": "apt purge nginx",
+    "category": "Package Management",
+    "description": "Removes nginx and its configuration files on Debian-based systems.",
+    "example_output": "Removing nginx (1.18.0-6ubuntu14)...\nPurging configuration files...",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-091",
+    "command": "yum remove httpd",
+    "category": "Package Management",
+    "description": "Uninstalls the Apache web server on CentOS/RHEL systems.",
+    "example_output": "Removing: httpd-2.4.46-1.el8.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-092",
+    "command": "dnf upgrade",
+    "category": "Package Management",
+    "description": "Upgrades all packages to the latest versions on Fedora-based systems.",
+    "example_output": "Upgrading: python3-3.9.7-1.fc34.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-117",
+    "command": "apt clean",
+    "category": "Package Management",
+    "description": "Clears local repository of retrieved package files on Debian-based systems.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-118",
+    "command": "yum check-update",
+    "category": "Package Management",
+    "description": "Checks for available package updates on CentOS/RHEL systems.",
+    "example_output": "httpd.x86_64 2.4.47-1.el8 updates",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-119",
+    "command": "dnf autoremove",
+    "category": "Package Management",
+    "description": "Removes unused dependencies on Fedora-based systems.",
+    "example_output": "Removing: unused-package-1.0-1.fc34.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-143",
+    "command": "apt list --installed",
+    "category": "Package Management",
+    "description": "Lists all installed packages on Debian-based systems.",
+    "example_output": "nginx/focal,now 1.18.0-6ubuntu14 amd64 [installed]\npython3/focal,now 3.8.5-1 amd64 [installed]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-144",
+    "command": "yum history",
+    "category": "Package Management",
+    "description": "Displays the transaction history of yum on CentOS/RHEL systems.",
+    "example_output": "ID | Login user | Date and time | Action | Altered\n1 | root | 2025-05-21 11:02 | Install | 5",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-145",
+    "command": "dnf provides /bin/bash",
+    "category": "Package Management",
+    "description": "Finds which package provides /bin/bash on Fedora-based systems.",
+    "example_output": "bash-5.1.8-2.fc34.x86_64 : The GNU Bourne Again shell\nRepo : @System",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-191",
+    "command": "apt search nginx",
+    "category": "Package Management",
+    "description": "Searches for nginx packages in Debian-based repositories.",
+    "example_output": "nginx/focal 1.18.0-6ubuntu14 amd64\nWeb/proxy server",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-192",
+    "command": "yum info httpd",
+    "category": "Package Management",
+    "description": "Displays detailed information about the httpd package on CentOS/RHEL.",
+    "example_output": "Name : httpd\nVersion : 2.4.46\nRelease : 1.el8\nArchitecture : x86_64\nSize : 1.4 M",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-193",
+    "command": "dnf clean all",
+    "category": "Package Management",
+    "description": "Removes cached data and metadata on Fedora-based systems.",
+    "example_output": "Cleaning repos: fedora updates\n0 files removed",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-194",
+    "command": "apt show python3",
+    "category": "Package Management",
+    "description": "Displays detailed information about the python3 package on Debian-based systems.",
+    "example_output": "Package: python3\nVersion: 3.8.5-1\nPriority: optional\nSection: python",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-195",
+    "command": "yum groupinstall 'Development Tools'",
+    "category": "Package Management",
+    "description": "Installs the Development Tools package group on CentOS/RHEL.",
+    "example_output": "Installing group/module packages:\ngcc-8.5.0-10.el8.x86_64\nmake-4.2.1-11.el8.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-196",
+    "command": "dnf repoquery --installed",
+    "category": "Package Management",
+    "description": "Lists all installed packages on Fedora-based systems.",
+    "example_output": "bash-0:5.1.8-2.fc34.x86_64\npython3-0:3.9.6-2.fc34.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-197",
+    "command": "apt depends nginx",
+    "category": "Package Management",
+    "description": "Shows dependencies for the nginx package on Debian-based systems.",
+    "example_output": "nginx\nDepends: nginx-common (= 1.18.0-6ubuntu14)\nDepends: nginx-core (>= 1.18.0-6ubuntu14)",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-198",
+    "command": "yum provides /usr/bin/python3",
+    "category": "Package Management",
+    "description": "Finds which package provides /usr/bin/python3 on CentOS/RHEL.",
+    "example_output": "python3-3.6.8-18.el8.x86_64 : Interpreter of the Python programming language\nRepo : base",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-199",
+    "command": "dnf group list",
+    "category": "Package Management",
+    "description": "Lists available package groups on Fedora-based systems.",
+    "example_output": "Available Groups:\nDevelopment Tools\nMinimal Install",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-200",
+    "command": "apt policy nginx",
+    "category": "Package Management",
+    "description": "Shows the installation status and priority of nginx on Debian-based systems.",
+    "example_output": "nginx:\nInstalled: 1.18.0-6ubuntu14\nCandidate: 1.18.0-6ubuntu14\nVersion table:\n*** 1.18.0-6ubuntu14 500",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-275",
+    "command": "apt source nginx",
+    "category": "Package Management",
+    "description": "Downloads the source code for the nginx package on Debian-based systems.",
+    "example_output": "Reading package lists... Done\nUnpacking nginx source to nginx-1.18.0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt.8.html"
+  },
+  {
+    "id": "cmd-276",
+    "command": "yum reinstall httpd",
+    "category": "Package Management",
+    "description": "Reinstalls the httpd package on CentOS/RHEL systems.",
+    "example_output": "Reinstalling: httpd-2.4.46-1.el8.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-277",
+    "command": "dnf history list",
+    "category": "Package Management",
+    "description": "Lists transaction history for dnf on Fedora-based systems.",
+    "example_output": "ID | Command line | Date and time | Action | Altered\n1 | install python3 | 2025-05-21 11:02 | Install | 5",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-400",
+    "command": "apt-file search /usr/bin/nginx",
+    "category": "Package Management",
+    "description": "Finds which package provides /usr/bin/nginx on Debian-based systems.",
+    "example_output": "nginx: /usr/bin/nginx",
+    "man_reference": "https://man7.org/linux/man-pages/man1/apt-file.1.html"
+  },
+  {
+    "id": "cmd-401",
+    "command": "yum deplist httpd",
+    "category": "Package Management",
+    "description": "Lists dependencies for the httpd package on CentOS/RHEL.",
+    "example_output": "package: httpd\n dependency: apr\n provider: apr-1.6.3-11.el8.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-402",
+    "command": "dnf module list",
+    "category": "Package Management",
+    "description": "Lists available modules on Fedora-based systems.",
+    "example_output": "Name Stream Profiles Summary\npython36 3.6 [d] common Python 3.6\nnodejs 16 [d] common Node.js 16",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-527",
+    "command": "apt-config dump",
+    "category": "Package Management",
+    "description": "Dumps the configuration of APT on Debian-based systems.",
+    "example_output": "APT::Architecture \"amd64\";\nAPT::Default-Release \"stable\";",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apt-config.8.html"
+  },
+  {
+    "id": "cmd-528",
+    "command": "yum history info 1",
+    "category": "Package Management",
+    "description": "Displays details of transaction ID 1 in yum history on CentOS/RHEL.",
+    "example_output": "Transaction ID: 1\nBegin time: Wed May 21 11:02:00 2025\nCommand Line: install python3",
+    "man_reference": "https://man7.org/linux/man-pages/man8/yum.8.html"
+  },
+  {
+    "id": "cmd-529",
+    "command": "dnf repoquery --requires python3",
+    "category": "Package Management",
+    "description": "Lists dependencies required by the python3 package on Fedora-based systems.",
+    "example_output": "libc.so.6()(64bit)\nlibpython3.9.so.1.0()(64bit)",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+  },
+  {
+    "id": "cmd-530",
+    "command": "rpm -qf /usr/bin/nginx",
+    "category": "Package Management",
+    "description": "Identifies which package owns /usr/bin/nginx.",
+    "example_output": "nginx-1.18.0-1.el8.x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/rpm.8.html"
+  },
+  {
+    "id": "cmd-531",
+    "command": "rpm -V nginx",
+    "category": "Package Management",
+    "description": "Verifies the integrity of files in the nginx package.",
+    "example_output": ".......T. /usr/bin/nginx",
+    "man_reference": "https://man7.org/linux/man-pages/man8/rpm.8.html"
+  },
+  {
+    "id": "cmd-532",
+    "command": "debsums -c nginx",
+    "category": "Package Management",
+    "description": "Checks the integrity of files in the nginx package on Debian-based systems.",
+    "example_output": "[Lists changed files, if any]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/debsums.1.html"
+  }
+]

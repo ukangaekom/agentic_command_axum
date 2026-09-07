@@ -1,0 +1,754 @@
+[
+  {
+    "id": "cmd-004",
+    "command": "cp file.txt /backup",
+    "category": "File Management",
+    "description": "Copies file.txt to the /backup directory.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-005",
+    "command": "mv oldname.txt newname.txt",
+    "category": "File Management",
+    "description": "Renames or moves oldname.txt to newname.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "cmd-006",
+    "command": "rm -rf directory",
+    "category": "File Management",
+    "description": "Recursively deletes directory and its contents.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rm.1.html"
+  },
+  {
+    "id": "cmd-007",
+    "command": "touch newfile.txt",
+    "category": "File Management",
+    "description": "Creates an empty file named newfile.txt or updates its timestamp.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/touch.1.html"
+  },
+  {
+    "id": "cmd-008",
+    "command": "mkdir -p /path/to/newdir",
+    "category": "File Management",
+    "description": "Creates directory newdir with parent directories as needed.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+  },
+  {
+    "id": "cmd-036",
+    "command": "cp -r dir1 dir2",
+    "category": "File Management",
+    "description": "Recursively copies dir1 to dir2.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-037",
+    "command": "mv dir1 /archive",
+    "category": "File Management",
+    "description": "Moves dir1 to the /archive directory.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "cmd-038",
+    "command": "rm file.txt",
+    "category": "File Management",
+    "description": "Deletes file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rm.1.html"
+  },
+  {
+    "id": "cmd-064",
+    "command": "cp file.txt file.bak",
+    "category": "File Management",
+    "description": "Creates a backup copy of file.txt as file.bak.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-065",
+    "command": "mv file.txt /tmp",
+    "category": "File Management",
+    "description": "Moves file.txt to the /tmp directory.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "cmd-066",
+    "command": "rm -i file.txt",
+    "category": "File Management",
+    "description": "Deletes file.txt with interactive confirmation.",
+    "example_output": "rm: remove regular file 'file.txt'? y",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rm.1.html"
+  },
+  {
+    "id": "cmd-074",
+    "command": "cp -p file.txt /backup",
+    "category": "File Management",
+    "description": "Copies file.txt to /backup, preserving timestamps and permissions.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-075",
+    "command": "mv -i file.txt /tmp",
+    "category": "File Management",
+    "description": "Moves file.txt to /tmp with interactive prompt for overwrite.",
+    "example_output": "mv: overwrite '/tmp/file.txt'? y",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "cmd-076",
+    "command": "rm -r dir1",
+    "category": "File Management",
+    "description": "Recursively deletes dir1 and its contents.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rm.1.html"
+  },
+  {
+    "id": "cmd-077",
+    "command": "touch -t 202505211200 file.txt",
+    "category": "File Management",
+    "description": "Sets file.txt's timestamp to May 21, 2025, 12:00.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/touch.1.html"
+  },
+  {
+    "id": "cmd-078",
+    "command": "mkdir newdir",
+    "category": "File Management",
+    "description": "Creates a directory named newdir.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+  },
+  {
+    "id": "cmd-106",
+    "command": "cp -u file.txt /backup",
+    "category": "File Management",
+    "description": "Copies file.txt to /backup only if newer or missing.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-107",
+    "command": "mv -n file.txt /tmp",
+    "category": "File Management",
+    "description": "Moves file.txt to /tmp without overwriting existing files.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "cmd-108",
+    "command": "rm -v file.txt",
+    "category": "File Management",
+    "description": "Deletes file.txt with verbose output.",
+    "example_output": "removed 'file.txt'",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rm.1.html"
+  },
+  {
+    "id": "cmd-133",
+    "command": "cp -v file.txt /backup",
+    "category": "File Management",
+    "description": "Copies file.txt to /backup with verbose output.",
+    "example_output": "'file.txt' -> '/backup/file.txt'",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-134",
+    "command": "mv -u dir1 /archive",
+    "category": "File Management",
+    "description": "Moves dir1 to /archive only if newer or missing.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "cmd-135",
+    "command": "touch -a file.txt",
+    "category": "File Management",
+    "description": "Updates the access time of file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/touch.1.html"
+  },
+  {
+    "id": "cmd-161",
+    "command": "cp -a dir1 /backup",
+    "category": "File Management",
+    "description": "Copies dir1 to /backup, preserving structure and attributes.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-162",
+    "command": "mv -b file.txt /tmp",
+    "category": "File Management",
+    "description": "Moves file.txt to /tmp, creating a backup if it exists.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "cmd-163",
+    "command": "rm -f file.txt",
+    "category": "File Management",
+    "description": "Deletes file.txt without prompting.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rm.1.html"
+  },
+  {
+    "id": "cmd-164",
+    "command": "touch -c file.txt",
+    "category": "File Management",
+    "description": "Updates the timestamp of file.txt without creating it if it doesn't exist.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/touch.1.html"
+  },
+  {
+    "id": "cmd-165",
+    "command": "mkdir -m 700 secure_dir",
+    "category": "File Management",
+    "description": "Creates secure_dir with rwx permissions for owner only.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+  },
+  {
+    "id": "cmd-166",
+    "command": "cp -l file1.txt file2.txt",
+    "category": "File Management",
+    "description": "Creates a hard link file2.txt to file1.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-167",
+    "command": "mv -f file.txt /tmp",
+    "category": "File Management",
+    "description": "Moves file.txt to /tmp, overwriting without prompting.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mv.1.html"
+  },
+  {
+    "id": "cmd-168",
+    "command": "rmdir empty_dir",
+    "category": "File Management",
+    "description": "Removes the empty directory empty_dir.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rmdir.1.html"
+  },
+  {
+    "id": "cmd-169",
+    "command": "touch -m file.txt",
+    "category": "File Management",
+    "description": "Updates the modification time of file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/touch.1.html"
+  },
+  {
+    "id": "cmd-170",
+    "command": "cp -s file1.txt link.txt",
+    "category": "File Management",
+    "description": "Creates a symbolic link link.txt to file1.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cp.1.html"
+  },
+  {
+    "id": "cmd-231",
+    "command": "ln -s /etc/config.conf link.conf",
+    "category": "File Management",
+    "description": "Creates a symbolic link link.conf to /etc/config.conf.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ln.1.html"
+  },
+  {
+    "id": "cmd-232",
+    "command": "ln file1.txt file2.txt",
+    "category": "File Management",
+    "description": "Creates a hard link file2.txt to file1.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ln.1.html"
+  },
+  {
+    "id": "cmd-241",
+    "command": "du -sh /var/log",
+    "category": "File Management",
+    "description": "Displays the total size of /var/log in human-readable format.",
+    "example_output": "100M /var/log",
+    "man_reference": "https://man7.org/linux/man-pages/man1/du.1.html"
+  },
+  {
+    "id": "cmd-242",
+    "command": "find /var -name '*.log'",
+    "category": "File Management",
+    "description": "Finds all files with .log extension in /var.",
+    "example_output": "/var/log/syslog\n/var/log/auth.log",
+    "man_reference": "https://man7.org/linux/man-pages/man1/find.1.html"
+  },
+  {
+    "id": "cmd-254",
+    "command": "lsattr file.txt",
+    "category": "File Management",
+    "description": "Lists extended attributes of file.txt.",
+    "example_output": "----i---------e------- file.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lsattr.1.html"
+  },
+  {
+    "id": "cmd-255",
+    "command": "chattr +i file.txt",
+    "category": "File Management",
+    "description": "Sets the immutable attribute on file.txt, preventing modifications.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chattr.1.html"
+  },
+  {
+    "id": "cmd-263",
+    "command": "stat file.txt",
+    "category": "File Management",
+    "description": "Displays detailed file status, including timestamps and permissions.",
+    "example_output": "File: file.txt\nSize: 1024 Blocks: 8 IO Block: 4096 regular file\nAccess: (0644/-rw-r--r--) Uid: (1000/user) Gid: (1000/user)",
+    "man_reference": "https://man7.org/linux/man-pages/man1/stat.1.html"
+  },
+  {
+    "id": "cmd-286",
+    "command": "file file.bin",
+    "category": "File Management",
+    "description": "Determines the file type of file.bin.",
+    "example_output": "file.bin: ELF 64-bit LSB executable",
+    "man_reference": "https://man7.org/linux/man-pages/man1/file.1.html"
+  },
+  {
+    "id": "cmd-287",
+    "command": "mkfifo pipe",
+    "category": "File Management",
+    "description": "Creates a named pipe called pipe.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man3/mkfifo.3.html"
+  },
+  {
+    "id": "cmd-288",
+    "command": "truncate -s 1M file.txt",
+    "category": "File Management",
+    "description": "Resizes file.txt to exactly 1 megabyte.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/truncate.1.html"
+  },
+  {
+    "id": "cmd-289",
+    "command": "split -b 1M largefile.txt",
+    "category": "File Management",
+    "description": "Splits largefile.txt into 1MB chunks.",
+    "example_output": "[Creates xaa, xab, etc.]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/split.1.html"
+  },
+  {
+    "id": "cmd-313",
+    "command": "tee file.txt",
+    "category": "File Management",
+    "description": "Reads from stdin and writes to file.txt and stdout.",
+    "example_output": "[Input echoed to stdout and file.txt]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tee.1.html"
+  },
+  {
+    "id": "cmd-314",
+    "command": "shred -u file.txt",
+    "category": "File Management",
+    "description": "Overwrites and deletes file.txt securely.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/shred.1.html"
+  },
+  {
+    "id": "cmd-315",
+    "command": "mknod /dev/mynode c 1 3",
+    "category": "File Management",
+    "description": "Creates a character device node /dev/mynode with major 1, minor 3.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/mknod.1.html"
+  },
+  {
+    "id": "cmd-335",
+    "command": "chattr -i file.txt",
+    "category": "File Management",
+    "description": "Removes the immutable attribute from file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chattr.1.html"
+  },
+  {
+    "id": "cmd-336",
+    "command": "install -m 755 script.sh /usr/local/bin",
+    "category": "File Management",
+    "description": "Copies script.sh to /usr/local/bin with 755 permissions.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/install.1.html"
+  },
+  {
+    "id": "cmd-367",
+    "command": "chattr +a file.txt",
+    "category": "File Management",
+    "description": "Sets the append-only attribute on file.txt, allowing only appending.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chattr.1.html"
+  },
+  {
+    "id": "cmd-368",
+    "command": "dump -f backup.tar /dev/sda1",
+    "category": "File Management",
+    "description": "Backs up the /dev/sda1 filesystem to backup.tar.",
+    "example_output": "DUMP: Date of this level 0 dump: Wed May 21 11:02:00 2025",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dump.8.html"
+  },
+  {
+    "id": "cmd-369",
+    "command": "restore -rf backup.tar",
+    "category": "File Management",
+    "description": "Restores the filesystem from backup.tar.",
+    "example_output": "restore: ./: restoring inode 1234",
+    "man_reference": "https://man7.org/linux/man-pages/man8/restore.8.html"
+  },
+  {
+    "id": "cmd-370",
+    "command": "xfs_quota -x -c 'limit bsoft=1g bhard=2g user' /mnt",
+    "category": "File Management",
+    "description": "Sets a 1GB soft and 2GB hard disk quota for user on /mnt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/xfs_quota.8.html"
+  },
+  {
+    "id": "cmd-371",
+    "command": "tar --acls --xattrs -cpf backup.tar /data",
+    "category": "File Management",
+    "description": "Creates a tar archive of /data, preserving ACLs and extended attributes.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tar.1.html"
+  },
+  {
+    "id": "cmd-372",
+    "command": "dd if=/dev/zero of=file.img bs=1M count=100",
+    "category": "File Management",
+    "description": "Creates a 100MB file.img filled with zeros.",
+    "example_output": "100+0 records in\n100+0 records out\n104857600 bytes copied",
+    "man_reference": "https://man7.org/linux/man-pages/man1/dd.1.html"
+  },
+  {
+    "id": "cmd-404",
+    "command": "rsync -av /src /dst",
+    "category": "File Management",
+    "description": "Synchronizes /src to /dst with archive mode and verbose output.",
+    "example_output": "sending incremental file list\nfile.txt\nsent 1234 bytes received 56 bytes total size 1024",
+    "man_reference": "https://man7.org/linux/man-pages/man1/rsync.1.html"
+  },
+  {
+    "id": "cmd-405",
+    "command": "debugfs -R 'stat /file.txt' /dev/sda1",
+    "category": "File Management",
+    "description": "Displays inode details for /file.txt on /dev/sda1 using debugfs.",
+    "example_output": "Inode: 1234 Type: regular Mode: 0644 Flags: 0x0\nSize: 1024",
+    "man_reference": "https://man7.org/linux/man-pages/man8/debugfs.8.html"
+  },
+  {
+    "id": "cmd-406",
+    "command": "fsck.ext4 -n /dev/sda1",
+    "category": "File Management",
+    "description": "Checks the ext4 filesystem on /dev/sda1 without making changes.",
+    "example_output": "e2fsck 1.45.6 (20-Mar-2020)\n/dev/sda1: clean, 1234/6553600 files, 5242880/26214400 blocks",
+    "man_reference": "https://man7.org/linux/man-pages/man8/fsck.8.html"
+  },
+  {
+    "id": "cmd-407",
+    "command": "inotifywait -m /var/log",
+    "category": "File Management",
+    "description": "Monitors /var/log for filesystem events.",
+    "example_output": "/var/log/ CREATE syslog\n/var/log/ MODIFY syslog",
+    "man_reference": "https://man7.org/linux/man-pages/man1/inotifywait.1.html"
+  },
+  {
+    "id": "cmd-416",
+    "command": "fatrace",
+    "category": "File Management",
+    "description": "Monitors filesystem access events in real-time.",
+    "example_output": "11:02:00.123 nginx(1234): O /var/log/nginx/access.log",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fatrace.1.html"
+  },
+  {
+    "id": "cmd-417",
+    "command": "cryptsetup luksOpen /dev/sdb1 crypt",
+    "category": "File Management",
+    "description": "Opens an encrypted LUKS device /dev/sdb1 as 'crypt'.",
+    "example_output": "Enter passphrase for /dev/sdb1:",
+    "man_reference": "https://man7.org/linux/man-pages/man8/cryptsetup.8.html"
+  },
+  {
+    "id": "cmd-418",
+    "command": "badblocks -v /dev/sdb",
+    "category": "File Management",
+    "description": "Checks /dev/sdb for bad blocks with verbose output.",
+    "example_output": "Checking blocks 0 to 1048576\nPass completed, 0 bad blocks found.",
+    "man_reference": "https://man7.org/linux/man-pages/man8/badblocks.8.html"
+  },
+  {
+    "id": "cmd-424",
+    "command": "etckeeper init",
+    "category": "File Management",
+    "description": "Initializes etckeeper to track /etc in a version control system.",
+    "example_output": "Initialized empty Git repository in /etc/.git/",
+    "man_reference": "https://man7.org/linux/man-pages/man8/etckeeper.8.html"
+  },
+  {
+    "id": "cmd-425",
+    "command": "etckeeper commit 'Updated config'",
+    "category": "File Management",
+    "description": "Commits changes in /etc with the message 'Updated config'.",
+    "example_output": "[master 1234567] Updated config\n1 file changed, 1 insertion(+), 1 deletion(-)",
+    "man_reference": "https://man7.org/linux/man-pages/man8/etckeeper.8.html"
+  },
+  {
+    "id": "cmd-434",
+    "command": "tee -a file.txt",
+    "category": "File Management",
+    "description": "Appends stdin to file.txt and outputs to stdout.",
+    "example_output": "[Input appended to file.txt and echoed]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tee.1.html"
+  },
+  {
+    "id": "cmd-435",
+    "command": "split -l 1000 file.txt prefix-",
+    "category": "File Management",
+    "description": "Splits file.txt into files with 1000 lines each, named prefix-aa, prefix-ab, etc.",
+    "example_output": "[Creates prefix-aa, prefix-ab, etc.]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/split.1.html"
+  },
+  {
+    "id": "cmd-436",
+    "command": "csplit file.txt '/^#/' {*}",
+    "category": "File Management",
+    "description": "Splits file.txt into files at lines starting with '#'.",
+    "example_output": "1234\n5678",
+    "man_reference": "https://man7.org/linux/man-pages/man1/csplit.1.html"
+  },
+  {
+    "id": "cmd-456",
+    "command": "sync",
+    "category": "File Management",
+    "description": "Flushes filesystem buffers to disk.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/sync.8.html"
+  },
+  {
+    "id": "cmd-457",
+    "command": "fallocate -l 1G file.img",
+    "category": "File Management",
+    "description": "Preallocates a 1GB file.img without writing zeros.",
+    "example_output": "[No output, creates file.img]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fallocate.1.html"
+  },
+  {
+    "id": "cmd-458",
+    "command": "xfs_info /dev/sda1",
+    "category": "File Management",
+    "description": "Displays XFS filesystem geometry for /dev/sda1.",
+    "example_output": "meta-data=/dev/sda1 isize=512 agcount=4, agsize=65536 blks\ndata = bsize=4096 blocks=262144",
+    "man_reference": "https://man7.org/linux/man-pages/man8/xfs_info.8.html"
+  },
+  {
+    "id": "cmd-459",
+    "command": "mkfs.btrfs /dev/sdb1",
+    "category": "File Management",
+    "description": "Creates a Btrfs filesystem on /dev/sdb1.",
+    "example_output": "btrfs-progs v5.10\nFilesystem size: 100.00GiB\nData, single: total=1.00GiB, used=0.00B",
+    "man_reference": "https://man7.org/linux/man-pages/man8/mkfs.btrfs.8.html"
+  },
+  {
+    "id": "cmd-460",
+    "command": "btrfs filesystem show",
+    "category": "File Management",
+    "description": "Lists all Btrfs filesystems and their devices.",
+    "example_output": "Label: none uuid: 1234-5678-90ab-cdef\nTotal devices 1 FS bytes used 1.00GiB\ndevid 1 size 100.00GiB used 2.00GiB path /dev/sdb1",
+    "man_reference": "https://man7.org/linux/man-pages/man8/btrfs.8.html"
+  },
+  {
+    "id": "cmd-461",
+    "command": "chattr +s file.txt",
+    "category": "File Management",
+    "description": "Sets the secure deletion attribute on file.txt, zeroing data on delete.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chattr.1.html"
+  },
+  {
+    "id": "cmd-480",
+    "command": "csplit -z file.txt '/^#/' {*}",
+    "category": "File Management",
+    "description": "Splits file.txt at lines starting with '#' into numbered files, skipping empty files.",
+    "example_output": "1234\n5678",
+    "man_reference": "https://man7.org/linux/man-pages/man1/csplit.1.html"
+  },
+  {
+    "id": "cmd-481",
+    "command": "znew logfile.gz",
+    "category": "File Management",
+    "description": "Recompresses logfile.gz from gzip to bzip2 format.",
+    "example_output": "logfile.gz -> logfile.bz2",
+    "man_reference": "https://man7.org/linux/man-pages/man1/znew.1.html"
+  },
+  {
+    "id": "cmd-482",
+    "command": "xfs_repair /dev/sda1",
+    "category": "File Management",
+    "description": "Repairs an XFS filesystem on /dev/sda1.",
+    "example_output": "Phase 1 - find and verify superblock...\nPhase 2 - using internal log\n - zero log...\n - scan filesystem freespace and inode maps...",
+    "man_reference": "https://man7.org/linux/man-pages/man8/xfs_repair.8.html"
+  },
+  {
+    "id": "cmd-483",
+    "command": "btrfs subvolume create /mnt/subvol",
+    "category": "File Management",
+    "description": "Creates a Btrfs subvolume at /mnt/subvol.",
+    "example_output": "Create subvolume '/mnt/subvol'",
+    "man_reference": "https://man7.org/linux/man-pages/man8/btrfs.8.html"
+  },
+  {
+    "id": "cmd-484",
+    "command": "btrfs scrub start /mnt",
+    "category": "File Management",
+    "description": "Starts a scrub to check data integrity on the Btrfs filesystem at /mnt.",
+    "example_output": "scrub started on /mnt, fsid 1234-5678-90ab-cdef",
+    "man_reference": "https://man7.org/linux/man-pages/man8/btrfs.8.html"
+  },
+  {
+    "id": "cmd-485",
+    "command": "e2fsck -n /dev/sda1",
+    "category": "File Management",
+    "description": "Checks the ext2/ext3/ext4 filesystem on /dev/sda1 without modifying it.",
+    "example_output": "e2fsck 1.45.6 (20-Mar-2020)\n/dev/sda1: clean, 1234/6553600 files, 5242880/26214400 blocks",
+    "man_reference": "https://man7.org/linux/man-pages/man8/e2fsck.8.html"
+  },
+  {
+    "id": "cmd-486",
+    "command": "tune2fs -l /dev/sda1",
+    "category": "File Management",
+    "description": "Displays superblock information for the ext2/ext3/ext4 filesystem on /dev/sda1.",
+    "example_output": "Filesystem UUID: 1234-5678-90ab-cdef\nFilesystem magic number: 0xEF53\nFilesystem state: clean",
+    "man_reference": "https://man7.org/linux/man-pages/man8/tune2fs.8.html"
+  },
+  {
+    "id": "cmd-487",
+    "command": "cryptsetup benchmark",
+    "category": "File Management",
+    "description": "Runs performance benchmarks for encryption algorithms.",
+    "example_output": "PBKDF2-sha256 123456 iterations/sec\nAES-CBC 123.4 MiB/s\nAES-XTS 234.5 MiB/s",
+    "man_reference": "https://man7.org/linux/man-pages/man8/cryptsetup.8.html"
+  },
+  {
+    "id": "cmd-490",
+    "command": "chattr -R +u /backup",
+    "category": "File Management",
+    "description": "Recursively sets the undelete attribute on /backup for data recovery.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chattr.1.html"
+  },
+  {
+    "id": "cmd-517",
+    "command": "zstd -z file.txt",
+    "category": "File Management",
+    "description": "Compresses file.txt using Zstandard algorithm.",
+    "example_output": "file.txt: 1024 --> 512 bytes, 50.00%, Compression",
+    "man_reference": "https://man7.org/linux/man-pages/man1/zstd.1.html"
+  },
+  {
+    "id": "cmd-519",
+    "command": "xz -z file.txt",
+    "category": "File Management",
+    "description": "Compresses file.txt using XZ compression.",
+    "example_output": "[Creates file.txt.xz]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/xz.1.html"
+  },
+  {
+    "id": "cmd-521",
+    "command": "lzip -z file.txt",
+    "category": "File Management",
+    "description": "Compresses file.txt using Lzip compression.",
+    "example_output": "[Creates file.txt.lz]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lzip.1.html"
+  },
+  {
+    "id": "cmd-545",
+    "command": "lsattr -R /data",
+    "category": "File Management",
+    "description": "Recursively lists extended attributes for files in /data.",
+    "example_output": "----i---------e------- /data/file1.txt\n-------------e------- /data/file2.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lsattr.1.html"
+  },
+  {
+    "id": "cmd-566",
+    "command": "btrfs filesystem df /mnt",
+    "category": "File Management",
+    "description": "Shows disk usage for the Btrfs filesystem at /mnt.",
+    "example_output": "Data, single: total=1.00GiB, used=512.00MiB\nSystem, DUP: total=8.00MiB, used=4.00KiB",
+    "man_reference": "https://man7.org/linux/man-pages/man8/btrfs.8.html"
+  },
+  {
+    "id": "cmd-567",
+    "command": "xfs_db -r /dev/sda1",
+    "category": "File Management",
+    "description": "Opens an interactive debugger for the XFS filesystem on /dev/sda1.",
+    "example_output": "xfs_db> [Interactive debugger prompt]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/xfs_db.8.html"
+  },
+  {
+    "id": "cmd-568",
+    "command": "debugfs -c /dev/sda1",
+    "category": "File Management",
+    "description": "Opens debugfs in read-only mode for the ext2/ext3/ext4 filesystem on /dev/sda1.",
+    "example_output": "debugfs 1.45.6 (20-Mar-2020)\n[Interactive debugger prompt]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/debugfs.8.html"
+  },
+  {
+    "id": "cmd-569",
+    "command": "dumpe2fs -h /dev/sda1",
+    "category": "File Management",
+    "description": "Displays superblock and block group information for /dev/sda1.",
+    "example_output": "Filesystem UUID: 1234-5678-90ab-cdef\nFilesystem state: clean\nInode count: 6553600",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dumpe2fs.8.html"
+  },
+  {
+    "id": "cmd-594",
+    "command": "etckeeper vcs log",
+    "category": "File Management",
+    "description": "Displays the version control log for /etc managed by etckeeper.",
+    "example_output": "commit 1234567890abcdef\nAuthor: user\nDate: Wed May 21 11:02:00 2025\nUpdated config",
+    "man_reference": "https://man7.org/linux/man-pages/man8/etckeeper.8.html"
+  },
+  {
+    "id": "cmd-595",
+    "command": "mkswap /dev/sdb1",
+    "category": "File Management",
+    "description": "Sets up /dev/sdb1 as a swap partition.",
+    "example_output": "Setting up swapspace version 1, size = 100 GiB\nno label, UUID=1234-5678-90ab-cdef",
+    "man_reference": "https://man7.org/linux/man-pages/man8/mkswap.8.html"
+  },
+  {
+    "id": "cmd-596",
+    "command": "swapon /dev/sdb1",
+    "category": "File Management",
+    "description": "Enables the swap partition on /dev/sdb1.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/swapon.8.html"
+  },
+  {
+    "id": "cmd-597",
+    "command": "swapoff /dev/sdb1",
+    "category": "File Management",
+    "description": "Disables the swap partition on /dev/sdb1.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/swapoff.8.html"
+  },
+  {
+    "id": "cmd-598",
+    "command": "cryptsetup luksDump /dev/sdb1",
+    "category": "File Management",
+    "description": "Displays metadata for the LUKS partition on /dev/sdb1.",
+    "example_output": "LUKS header information for /dev/sdb1\nVersion: 2\nCipher: aes-xts-plain64\nKeyslots: 1 active",
+    "man_reference": "https://man7.org/linux/man-pages/man8/cryptsetup.8.html"
+  }
+]

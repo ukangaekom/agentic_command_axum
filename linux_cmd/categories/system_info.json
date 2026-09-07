@@ -1,0 +1,634 @@
+[
+  {
+    "id": "cmd-013",
+    "command": "uname -a",
+    "category": "System Info",
+    "description": "Displays all system information (kernel, hostname, etc.).",
+    "example_output": "Linux host 5.15.0-73-generic #80-Ubuntu SMP",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uname.1.html"
+  },
+  {
+    "id": "cmd-014",
+    "command": "top",
+    "category": "System Info",
+    "description": "Displays real-time system processes and resource usage.",
+    "example_output": "[Interactive process monitor]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/top.1.html"
+  },
+  {
+    "id": "cmd-015",
+    "command": "df -h",
+    "category": "System Info",
+    "description": "Shows disk usage in human-readable format.",
+    "example_output": "Filesystem Size Used Avail Use% Mounted on\n/dev/sda1 100G 50G 50G 50% /",
+    "man_reference": "https://man7.org/linux/man-pages/man1/df.1.html"
+  },
+  {
+    "id": "cmd-016",
+    "command": "free -m",
+    "category": "System Info",
+    "description": "Displays memory usage in megabytes.",
+    "example_output": "total used free shared buff/cache available\nMem: 8192 4096 2048 512 2048 4096",
+    "man_reference": "https://man7.org/linux/man-pages/man1/free.1.html"
+  },
+  {
+    "id": "cmd-043",
+    "command": "uname -r",
+    "category": "System Info",
+    "description": "Displays the kernel release version.",
+    "example_output": "5.15.0-73-generic",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uname.1.html"
+  },
+  {
+    "id": "cmd-044",
+    "command": "df /",
+    "category": "System Info",
+    "description": "Shows disk usage for the root filesystem.",
+    "example_output": "Filesystem 1K-blocks Used Available Use% Mounted on\n/dev/sda1 104857600 52428800 52428800 50% /",
+    "man_reference": "https://man7.org/linux/man-pages/man1/df.1.html"
+  },
+  {
+    "id": "cmd-045",
+    "command": "free -h",
+    "category": "System Info",
+    "description": "Displays memory usage in human-readable format.",
+    "example_output": "total used free shared buff/cache available\nMem: 8.0G 4.0G 2.0G 512M 2.0G 4.0G",
+    "man_reference": "https://man7.org/linux/man-pages/man1/free.1.html"
+  },
+  {
+    "id": "cmd-083",
+    "command": "uname -m",
+    "category": "System Info",
+    "description": "Displays the machine hardware architecture.",
+    "example_output": "x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uname.1.html"
+  },
+  {
+    "id": "cmd-084",
+    "command": "top -n 1",
+    "category": "System Info",
+    "description": "Runs top for one iteration and exits.",
+    "example_output": "[Snapshot of process monitor]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/top.1.html"
+  },
+  {
+    "id": "cmd-085",
+    "command": "df -T",
+    "category": "System Info",
+    "description": "Shows disk usage with filesystem types.",
+    "example_output": "Filesystem Type 1K-blocks Used Available Use% Mounted on\n/dev/sda1 ext4 104857600 52428800 52428800 50% /",
+    "man_reference": "https://man7.org/linux/man-pages/man1/df.1.html"
+  },
+  {
+    "id": "cmd-086",
+    "command": "free -t",
+    "category": "System Info",
+    "description": "Displays total memory usage, including swap.",
+    "example_output": "total used free shared buff/cache available\nMem: 8192 4096 2048 512 2048 4096\nSwap: 2048 1024 1024\nTotal: 10240 5120 3072",
+    "man_reference": "https://man7.org/linux/man-pages/man1/free.1.html"
+  },
+  {
+    "id": "cmd-113",
+    "command": "uname -n",
+    "category": "System Info",
+    "description": "Displays the system's hostname.",
+    "example_output": "host1",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uname.1.html"
+  },
+  {
+    "id": "cmd-114",
+    "command": "df -i",
+    "category": "System Info",
+    "description": "Shows inode usage for filesystems.",
+    "example_output": "Filesystem Inodes IUsed IFree IUse% Mounted on\n/dev/sda1 6553600 327680 6225920 5% /",
+    "man_reference": "https://man7.org/linux/man-pages/man1/df.1.html"
+  },
+  {
+    "id": "cmd-140",
+    "command": "free -s 2",
+    "category": "System Info",
+    "description": "Displays memory usage every 2 seconds.",
+    "example_output": "[Continuous memory usage updates]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/free.1.html"
+  },
+  {
+    "id": "cmd-181",
+    "command": "uptime",
+    "category": "System Info",
+    "description": "Displays system uptime and load averages.",
+    "example_output": "11:02:00 up 1 day, 2:00, 1 user, load average: 0.00, 0.01, 0.05",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uptime.1.html"
+  },
+  {
+    "id": "cmd-182",
+    "command": "vmstat 2 5",
+    "category": "System Info",
+    "description": "Reports virtual memory statistics every 2 seconds for 5 iterations.",
+    "example_output": "procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\nr b swpd free buff cache si so bi bo in cs us sy id wa st\n0 0 1024 2048 512 4096 0 0 0 0 100 200 5 2 93 0 0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/vmstat.8.html"
+  },
+  {
+    "id": "cmd-183",
+    "command": "iostat -x 1 3",
+    "category": "System Info",
+    "description": "Shows extended I/O statistics every second for 3 iterations.",
+    "example_output": "avg-cpu: %user %nice %system %iowait %steal %idle\n5.00 0.00 2.00 0.50 0.00 92.50\nDevice tps kB_read/s kB_wrtn/s kB_dscd/s kB_read kB_wrtn kB_dscd\nsda 10.00 100.00 200.00 0.00 100 200 0",
+    "man_reference": "https://man7.org/linux/man-pages/man1/iostat.1.html"
+  },
+  {
+    "id": "cmd-184",
+    "command": "lscpu",
+    "category": "System Info",
+    "description": "Displays CPU architecture information.",
+    "example_output": "Architecture: x86_64\nCPU(s): 4\nThread(s) per core: 2\nCore(s) per socket: 2\nSocket(s): 1",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lscpu.1.html"
+  },
+  {
+    "id": "cmd-185",
+    "command": "lsblk",
+    "category": "System Info",
+    "description": "Lists block devices and their mount points.",
+    "example_output": "NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT\nsda 8:0 0 100G 0 disk \n└─sda1 8:1 0 100G 0 part /",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsblk.8.html"
+  },
+  {
+    "id": "cmd-186",
+    "command": "dmidecode -t memory",
+    "category": "System Info",
+    "description": "Displays detailed memory hardware information.",
+    "example_output": "Handle 0x0001, DMI type 17, 84 bytes\nMemory Device\nSize: 8192 MB\nType: DDR4\nSpeed: 3200 MT/s",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dmidecode.8.html"
+  },
+  {
+    "id": "cmd-224",
+    "command": "lsblk -f",
+    "category": "System Info",
+    "description": "Lists block devices with filesystem types and UUIDs.",
+    "example_output": "NAME FSTYPE UUID MOUNTPOINT\nsda \n└─sda1 ext4 1234-5678-90ab-cdef /",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsblk.8.html"
+  },
+  {
+    "id": "cmd-225",
+    "command": "lscpu -e",
+    "category": "System Info",
+    "description": "Displays CPU information in a tabular format.",
+    "example_output": "CPU NODE SOCKET CORE L1d:L1i:L2:L3 ONLINE\n0 0 0 0 0:0:0:0 yes\n1 0 0 0 0:0:0:0 yes",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lscpu.1.html"
+  },
+  {
+    "id": "cmd-226",
+    "command": "vmstat -s",
+    "category": "System Info",
+    "description": "Displays a summary of virtual memory statistics.",
+    "example_output": "8192 K total memory\n4096 K used memory\n2048 K active memory\n1024 K inactive memory\n4096 K free memory",
+    "man_reference": "https://man7.org/linux/man-pages/man8/vmstat.8.html"
+  },
+  {
+    "id": "cmd-243",
+    "command": "lsmod",
+    "category": "System Info",
+    "description": "Lists loaded kernel modules.",
+    "example_output": "Module Size Used by\nnf_conntrack 123456 1\nnf_nat 78901 1",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsmod.8.html"
+  },
+  {
+    "id": "cmd-244",
+    "command": "uname -o",
+    "category": "System Info",
+    "description": "Displays the operating system name.",
+    "example_output": "GNU/Linux",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uname.1.html"
+  },
+  {
+    "id": "cmd-268",
+    "command": "ipcs -m",
+    "category": "System Info",
+    "description": "Lists shared memory segments.",
+    "example_output": "------ Shared Memory Segments --------\nkey shmid owner perms bytes nattch status\n0x00000000 12345 user 600 1048576 2",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ipcs.1.html"
+  },
+  {
+    "id": "cmd-269",
+    "command": "sar -u 1 3",
+    "category": "System Info",
+    "description": "Reports CPU usage every second for 3 iterations.",
+    "example_output": "11:02:00 CPU %user %nice %system %iowait %steal %idle\n11:02:01 all 5.00 0.00 2.00 0.50 0.00 92.50",
+    "man_reference": "https://man7.org/linux/man-pages/man1/sar.1.html"
+  },
+  {
+    "id": "cmd-270",
+    "command": "dmesg -T",
+    "category": "System Info",
+    "description": "Displays kernel messages with human-readable timestamps.",
+    "example_output": "[Wed May 21 11:02:00 2025] kernel: eth0: link up",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dmesg.8.html"
+  },
+  {
+    "id": "cmd-271",
+    "command": "lsdev",
+    "category": "System Info",
+    "description": "Lists hardware device information.",
+    "example_output": "Device DMA IRQ I/O Ports\neth0 5 10 1000-100f",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsdev.8.html"
+  },
+  {
+    "id": "cmd-278",
+    "command": "logger 'Test message'",
+    "category": "System Info",
+    "description": "Sends 'Test message' to the system log.",
+    "example_output": "[No output, logged to /var/log/syslog]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/logger.1.html"
+  },
+  {
+    "id": "cmd-285",
+    "command": "journalctl -u nginx",
+    "category": "System Info",
+    "description": "Displays logs for the nginx service.",
+    "example_output": "May 21 11:02:00 host nginx[1234]: started",
+    "man_reference": "https://man7.org/linux/man-pages/man8/journalctl.8.html"
+  },
+  {
+    "id": "cmd-297",
+    "command": "ulimit -n 1024",
+    "category": "System Info",
+    "description": "Sets the maximum number of open file descriptors to 1024.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man3/ulimit.3.html"
+  },
+  {
+    "id": "cmd-301",
+    "command": "watch -n 1 'date'",
+    "category": "System Info",
+    "description": "Runs 'date' every second, updating the output.",
+    "example_output": "[Continuous date updates]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/watch.1.html"
+  },
+  {
+    "id": "cmd-307",
+    "command": "vmstat -d",
+    "category": "System Info",
+    "description": "Reports disk I/O statistics.",
+    "example_output": "disk reads merged reads sectors reads ms writes merged writes sectors writes ms io cur io s\nsda 1234 100 56789 1000 5678 200 123456 2000 0 0 0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/vmstat.8.html"
+  },
+  {
+    "id": "cmd-308",
+    "command": "dmidecode -t bios",
+    "category": "System Info",
+    "description": "Displays BIOS information.",
+    "example_output": "BIOS Information\nVendor: American Megatrends\nVersion: 1.0\nRelease Date: 05/21/2025",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dmidecode.8.html"
+  },
+  {
+    "id": "cmd-330",
+    "command": "df -t ext4",
+    "category": "System Info",
+    "description": "Shows disk usage for ext4 filesystems only.",
+    "example_output": "Filesystem 1K-blocks Used Available Use% Mounted on\n/dev/sda1 104857600 52428800 52428800 50% /",
+    "man_reference": "https://man7.org/linux/man-pages/man1/df.1.html"
+  },
+  {
+    "id": "cmd-331",
+    "command": "free -w",
+    "category": "System Info",
+    "description": "Displays memory usage with wide format.",
+    "example_output": "total used free shared buffers cache available\nMem: 8192 4096 2048 512 1024 1024 4096",
+    "man_reference": "https://man7.org/linux/man-pages/man1/free.1.html"
+  },
+  {
+    "id": "cmd-332",
+    "command": "lscpu -b",
+    "category": "System Info",
+    "description": "Displays CPU information in a parseable format.",
+    "example_output": "Architecture:x86_64\nCPU(s):4",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lscpu.1.html"
+  },
+  {
+    "id": "cmd-348",
+    "command": "lsblk -o NAME,SIZE,TYPE",
+    "category": "System Info",
+    "description": "Lists block devices with name, size, and type columns.",
+    "example_output": "NAME SIZE TYPE\nsda 100G disk\n└─sda1 100G part",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsblk.8.html"
+  },
+  {
+    "id": "cmd-354",
+    "command": "findmnt -t ext4",
+    "category": "System Info",
+    "description": "Lists mounted ext4 filesystems with details.",
+    "example_output": "TARGET SOURCE FSTYPE OPTIONS\n/ /dev/sda1 ext4 rw,relatime",
+    "man_reference": "https://man7.org/linux/man-pages/man8/findmnt.8.html"
+  },
+  {
+    "id": "cmd-355",
+    "command": "lsns",
+    "category": "System Info",
+    "description": "Lists Linux namespaces (e.g., PID, network, user).",
+    "example_output": "NS TYPE NPROCS PID USER COMMAND\n4026531835 cgroup 10 1 root systemd",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsns.8.html"
+  },
+  {
+    "id": "cmd-356",
+    "command": "sysctl -a",
+    "category": "System Info",
+    "description": "Displays all kernel parameters and their values.",
+    "example_output": "kernel.pid_max = 32768\nnet.ipv4.ip_forward = 0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/sysctl.8.html"
+  },
+  {
+    "id": "cmd-357",
+    "command": "auditctl -l",
+    "category": "System Info",
+    "description": "Lists current audit rules for system monitoring.",
+    "example_output": "-w /etc/passwd -p wa -k passwd_changes",
+    "man_reference": "https://man7.org/linux/man-pages/man8/auditctl.8.html"
+  },
+  {
+    "id": "cmd-358",
+    "command": "ausearch -m LOGIN",
+    "category": "System Info",
+    "description": "Searches audit logs for login-related events.",
+    "example_output": "type=LOGIN msg=audit(1621617720.123:456): pid=1234 uid=0 auid=1000 ses=1",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ausearch.8.html"
+  },
+  {
+    "id": "cmd-359",
+    "command": "blkid -o list",
+    "category": "System Info",
+    "description": "Lists block devices with UUIDs and filesystem types.",
+    "example_output": "device fs_type label mount point UUID\n/dev/sda1 ext4 / 1234-5678-90ab-cdef",
+    "man_reference": "https://man7.org/linux/man-pages/man8/blkid.8.html"
+  },
+  {
+    "id": "cmd-360",
+    "command": "iotop -o",
+    "category": "System Info",
+    "description": "Displays I/O usage by processes, showing only active ones.",
+    "example_output": "TID PRIO USER DISK READ DISK WRITE SWAPIN IO COMMAND\n1234 be/4 user 100.00 K/s 200.00 K/s 0.00 % nginx",
+    "man_reference": "https://man7.org/linux/man-pages/man8/iotop.8.html"
+  },
+  {
+    "id": "cmd-398",
+    "command": "journalctl -b",
+    "category": "System Info",
+    "description": "Displays system logs since the last boot.",
+    "example_output": "May 21 11:02:00 host systemd[1]: Started Session 1 of user user.",
+    "man_reference": "https://man7.org/linux/man-pages/man8/journalctl.8.html"
+  },
+  {
+    "id": "cmd-399",
+    "command": "parted -l",
+    "category": "System Info",
+    "description": "Lists partition tables for all disks.",
+    "example_output": "Model: ATA ST1000DM003 (scsi)\nDisk /dev/sda: 1000GB\nPartition Table: gpt\nNumber Start End Size File system Name Flags\n1 1049kB 1000GB 1000GB ext4 primary",
+    "man_reference": "https://man7.org/linux/man-pages/man8/parted.8.html"
+  },
+  {
+    "id": "cmd-413",
+    "command": "auditctl -a always,exit -F path=/etc/passwd -F perm=wa",
+    "category": "System Info",
+    "description": "Adds an audit rule to monitor write and attribute changes to /etc/passwd.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/auditctl.8.html"
+  },
+  {
+    "id": "cmd-415",
+    "command": "dstat -cdngy",
+    "category": "System Info",
+    "description": "Monitors CPU, disk, network, and system activity in real-time.",
+    "example_output": "----total-cpu-usage---- -dsk/sda- -net/eth0- ---system--\nusr sys idl wai stl read writ recv send int csw\n5 2 92 1 0 0 0 100 200 1000 500",
+    "man_reference": "https://man7.org/linux/man-pages/man1/dstat.1.html"
+  },
+  {
+    "id": "cmd-437",
+    "command": "systemctl cat nginx",
+    "category": "System Info",
+    "description": "Displays the unit file for the nginx service.",
+    "example_output": "# /lib/systemd/system/nginx.service\n[Unit]\nDescription=A high performance web server",
+    "man_reference": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+  },
+  {
+    "id": "cmd-438",
+    "command": "logrotate -f /etc/logrotate.conf",
+    "category": "System Info",
+    "description": "Forces log rotation based on /etc/logrotate.conf.",
+    "example_output": "rotating pattern: /var/log/syslog\nrenaming /var/log/syslog to /var/log/syslog.1",
+    "man_reference": "https://man7.org/linux/man-pages/man8/logrotate.8.html"
+  },
+  {
+    "id": "cmd-439",
+    "command": "lscpu -p",
+    "category": "System Info",
+    "description": "Displays CPU information in a parseable format without comments.",
+    "example_output": "0,0,0,0,0,0,0,0,yes\n1,0,0,0,0,0,0,0,yes",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lscpu.1.html"
+  },
+  {
+    "id": "cmd-440",
+    "command": "numactl --hardware",
+    "category": "System Info",
+    "description": "Displays NUMA node information.",
+    "example_output": "available: 2 nodes (0-1)\nnode 0 cpus: 0-3\nnode 0 size: 8192 MB",
+    "man_reference": "https://man7.org/linux/man-pages/man8/numactl.8.html"
+  },
+  {
+    "id": "cmd-441",
+    "command": "ipcs -s",
+    "category": "System Info",
+    "description": "Lists System V semaphore arrays.",
+    "example_output": "------ Semaphore Arrays --------\nkey semid owner perms nsems\n0x00000000 12345 user 600 1",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ipcs.1.html"
+  },
+  {
+    "id": "cmd-442",
+    "command": "ipcs -q",
+    "category": "System Info",
+    "description": "Lists System V message queues.",
+    "example_output": "------ Message Queues --------\nkey msqid owner perms used-bytes messages\n0x00000000 12345 user 600 0 0",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ipcs.1.html"
+  },
+  {
+    "id": "cmd-443",
+    "command": "dmidecode -t processor",
+    "category": "System Info",
+    "description": "Displays detailed processor information.",
+    "example_output": "Processor Information\nSocket Designation: CPU0\nType: Central Processor\nFamily: Core i7\nManufacturer: Intel",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dmidecode.8.html"
+  },
+  {
+    "id": "cmd-495",
+    "command": "ausyscall --dump",
+    "category": "System Info",
+    "description": "Dumps the system call table for audit purposes.",
+    "example_output": "0 read\n1 write\n2 open\n3 close",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ausyscall.8.html"
+  },
+  {
+    "id": "cmd-496",
+    "command": "lsipc",
+    "category": "System Info",
+    "description": "Lists information about IPC facilities (shared memory, semaphores, queues).",
+    "example_output": "RESOURCE DESCRIPTION LIMIT USED\nSHMMNI Shared memory: max segments 4096 10\nSEMMSL Semaphores: max per array 250 5",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lsipc.1.html"
+  },
+  {
+    "id": "cmd-497",
+    "command": "slabtop",
+    "category": "System Info",
+    "description": "Displays real-time kernel slab cache usage.",
+    "example_output": "OBJS ACTIVE USE OBJ SIZE SLABS OBJ/SLAB CACHE SIZE NAME\n1234 1000 80% 0.10K 100 12 400K dentry\n567 500 88% 0.20K 50 11 200K inode_cache",
+    "man_reference": "https://man7.org/linux/man-pages/man1/slabtop.1.html"
+  },
+  {
+    "id": "cmd-533",
+    "command": "partx -s /dev/sda",
+    "category": "System Info",
+    "description": "Lists partitions on /dev/sda with size and type.",
+    "example_output": "NR START END SECTORS SIZE NAME UUID\n1 2048 209715199 209713152 100G primary 1234-5678-90ab-cdef",
+    "man_reference": "https://man7.org/linux/man-pages/man8/partx.8.html"
+  },
+  {
+    "id": "cmd-534",
+    "command": "lsblk -p",
+    "category": "System Info",
+    "description": "Lists block devices with full device paths.",
+    "example_output": "NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT\n/dev/sda 8:0 0 100G 0 disk\n└─/dev/sda1 8:1 0 100G 0 part /",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsblk.8.html"
+  },
+  {
+    "id": "cmd-535",
+    "command": "lscpu -J",
+    "category": "System Info",
+    "description": "Displays CPU information in JSON format.",
+    "example_output": "{\"lscpu\":[{\"field\":\"Architecture\",\"data\":\"x86_64\"},{\"field\":\"CPU(s)\",\"data\":\"4\"}]}",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lscpu.1.html"
+  },
+  {
+    "id": "cmd-536",
+    "command": "free -b",
+    "category": "System Info",
+    "description": "Displays memory usage in bytes.",
+    "example_output": "total used free shared buff/cache available\nMem: 8589934592 4294967296 2147483648 536870912 2147483648 4294967296",
+    "man_reference": "https://man7.org/linux/man-pages/man1/free.1.html"
+  },
+  {
+    "id": "cmd-537",
+    "command": "uname -i",
+    "category": "System Info",
+    "description": "Displays the hardware platform.",
+    "example_output": "x86_64",
+    "man_reference": "https://man7.org/linux/man-pages/man1/uname.1.html"
+  },
+  {
+    "id": "cmd-538",
+    "command": "vmstat -SM",
+    "category": "System Info",
+    "description": "Reports virtual memory statistics in megabytes.",
+    "example_output": "procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----\nr b swpd free buff cache si so bi bo in cs us sy id wa st\n0 0 1 2048 512 4096 0 0 0 0 100 200 5 2 93 0 0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/vmstat.8.html"
+  },
+  {
+    "id": "cmd-539",
+    "command": "iostat -m",
+    "category": "System Info",
+    "description": "Displays I/O statistics in megabytes per second.",
+    "example_output": "avg-cpu: %user %nice %system %iowait %steal %idle\n5.00 0.00 2.00 0.50 0.00 92.50\nDevice tps MB_read/s MB_wrtn/s MB_dscd/s\nsda 10.00 0.10 0.20 0.00",
+    "man_reference": "https://man7.org/linux/man-pages/man1/iostat.1.html"
+  },
+  {
+    "id": "cmd-540",
+    "command": "lslocks",
+    "category": "System Info",
+    "description": "Lists file locks held by processes.",
+    "example_output": "COMMAND PID TYPE SIZE MODE M START END PATH\nnginx 1234 FLOCK 0B WRITE 0 0 0 /var/run/nginx.pid",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lslocks.8.html"
+  },
+  {
+    "id": "cmd-541",
+    "command": "lsmem",
+    "category": "System Info",
+    "description": "Lists memory ranges and their online status.",
+    "example_output": "Address range Size (MB) State Removable Device\n0x000000000-0x1ffffffff 8192 online no 0-1",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lsmem.1.html"
+  },
+  {
+    "id": "cmd-542",
+    "command": "lsscsi",
+    "category": "System Info",
+    "description": "Lists SCSI devices and their attributes.",
+    "example_output": "[0:0:0:0] disk ATA ST1000DM003 1.0 /dev/sda",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsscsi.8.html"
+  },
+  {
+    "id": "cmd-543",
+    "command": "lshw -short",
+    "category": "System Info",
+    "description": "Displays a concise hardware summary.",
+    "example_output": "H/W path Device Class Description\n/system system Computer\n/0/0 memory 8GiB System Memory\n/0/1 processor Intel Core i7",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lshw.8.html"
+  },
+  {
+    "id": "cmd-544",
+    "command": "dmsetup ls",
+    "category": "System Info",
+    "description": "Lists device mapper devices.",
+    "example_output": "crypt (253:0)",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dmsetup.8.html"
+  },
+  {
+    "id": "cmd-578",
+    "command": "systemd-analyze blame",
+    "category": "System Info",
+    "description": "Lists services and their startup times.",
+    "example_output": "10.123s nginx.service\n5.678s sshd.service",
+    "man_reference": "https://man7.org/linux/man-pages/man1/systemd-analyze.1.html"
+  },
+  {
+    "id": "cmd-579",
+    "command": "systemd-analyze critical-chain",
+    "category": "System Info",
+    "description": "Shows the critical chain of services affecting boot time.",
+    "example_output": "graphical.target @10.123s\n└─multi-user.target @10.123s\n  └─nginx.service @5.678s +4.445s",
+    "man_reference": "https://man7.org/linux/man-pages/man1/systemd-analyze.1.html"
+  },
+  {
+    "id": "cmd-580",
+    "command": "journalctl -p 3 -b",
+    "category": "System Info",
+    "description": "Shows log messages with priority 3 (errors) since the last boot.",
+    "example_output": "May 21 11:02:00 host nginx[1234]: error: bind() to 0.0.0.0:80 failed",
+    "man_reference": "https://man7.org/linux/man-pages/man8/journalctl.8.html"
+  },
+  {
+    "id": "cmd-581",
+    "command": "lsns -t pid",
+    "category": "System Info",
+    "description": "Lists PID namespaces.",
+    "example_output": "NS TYPE NPROCS PID USER COMMAND\n4026531835 pid 10 1 root systemd",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsns.8.html"
+  },
+  {
+    "id": "cmd-582",
+    "command": "findmnt -D",
+    "category": "System Info",
+    "description": "Lists mounted filesystems with disk usage details.",
+    "example_output": "TARGET SOURCE FSTYPE SIZE USED AVAIL USE% /dev/sda1 ext4 100G 50G 50G 50%",
+    "man_reference": "https://man7.org/linux/man-pages/man8/findmnt.8.html"
+  },
+  {
+    "id": "cmd-583",
+    "command": "lsblk -J",
+    "category": "System Info",
+    "description": "Lists block devices in JSON format.",
+    "example_output": "{\"blockdevices\":[{\"name\":\"sda\",\"size\":\"100G\",\"type\":\"disk\",\"children\":[{\"name\":\"sda1\",\"size\":\"100G\",\"type\":\"part\",\"mountpoint\":\"/\"}]}]}",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsblk.8.html"
+  },
+  {
+    "id": "cmd-584",
+    "command": "dmidecode -t system",
+    "category": "System Info",
+    "description": "Displays system hardware information.",
+    "example_output": "System Information\nManufacturer: Dell Inc.\nProduct Name: Precision 5520\nSerial Number: ABC123",
+    "man_reference": "https://man7.org/linux/man-pages/man8/dmidecode.8.html"
+  }
+]

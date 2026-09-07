@@ -1,0 +1,370 @@
+[
+  {
+    "id": "cmd-026",
+    "command": "whoami",
+    "category": "User Management",
+    "description": "Displays the current user's username.",
+    "example_output": "user",
+    "man_reference": "https://man7.org/linux/man-pages/man1/whoami.1.html"
+  },
+  {
+    "id": "cmd-027",
+    "command": "id",
+    "category": "User Management",
+    "description": "Shows user and group IDs for the current user.",
+    "example_output": "uid=1000(user) gid=1000(user) groups=1000(user),4(adm),27(sudo)",
+    "man_reference": "https://man7.org/linux/man-pages/man1/id.1.html"
+  },
+  {
+    "id": "cmd-028",
+    "command": "adduser newuser",
+    "category": "User Management",
+    "description": "Interactively adds a new user to the system.",
+    "example_output": "Adding user `newuser' ...\nEnter new UNIX password:",
+    "man_reference": "https://man7.org/linux/man-pages/man8/adduser.8.html"
+  },
+  {
+    "id": "cmd-054",
+    "command": "whoami",
+    "category": "User Management",
+    "description": "Displays the current user's username.",
+    "example_output": "user",
+    "man_reference": "https://man7.org/linux/man-pages/man1/whoami.1.html"
+  },
+  {
+    "id": "cmd-055",
+    "command": "id newuser",
+    "category": "User Management",
+    "description": "Shows user and group IDs for newuser.",
+    "example_output": "uid=1001(newuser) gid=1001(newuser) groups=1001(newuser)",
+    "man_reference": "https://man7.org/linux/man-pages/man1/id.1.html"
+  },
+  {
+    "id": "cmd-056",
+    "command": "adduser --home /home/testuser testuser",
+    "category": "User Management",
+    "description": "Adds testuser with a specified home directory.",
+    "example_output": "Adding user `testuser' ...\nEnter new UNIX password:",
+    "man_reference": "https://man7.org/linux/man-pages/man8/adduser.8.html"
+  },
+  {
+    "id": "cmd-096",
+    "command": "who",
+    "category": "User Management",
+    "description": "Lists currently logged-in users.",
+    "example_output": "user pts/0 2025-05-21 11:02 (192.168.1.100)",
+    "man_reference": "https://man7.org/linux/man-pages/man1/who.1.html"
+  },
+  {
+    "id": "cmd-097",
+    "command": "passwd newuser",
+    "category": "User Management",
+    "description": "Changes the password for newuser.",
+    "example_output": "Enter new UNIX password:\nRetype new UNIX password:",
+    "man_reference": "https://man7.org/linux/man-pages/man1/passwd.1.html"
+  },
+  {
+    "id": "cmd-098",
+    "command": "userdel -r testuser",
+    "category": "User Management",
+    "description": "Deletes testuser and their home directory.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/userdel.8.html"
+  },
+  {
+    "id": "cmd-123",
+    "command": "w",
+    "category": "User Management",
+    "description": "Shows detailed information about logged-in users.",
+    "example_output": "11:02:00 up 1 day, 2:00, 1 user, load average: 0.00, 0.01, 0.05\nUSER TTY FROM LOGIN@ IDLE JCPU PCPU WHAT\nuser pts/0 192.168.1.100 11:02 0.00s 0.01s 0.00s w",
+    "man_reference": "https://man7.org/linux/man-pages/man1/w.1.html"
+  },
+  {
+    "id": "cmd-124",
+    "command": "usermod -aG sudo newuser",
+    "category": "User Management",
+    "description": "Adds newuser to the sudo group.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/usermod.8.html"
+  },
+  {
+    "id": "cmd-125",
+    "command": "groupadd newgroup",
+    "category": "User Management",
+    "description": "Creates a new group named newgroup.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/groupadd.8.html"
+  },
+  {
+    "id": "cmd-148",
+    "command": "last",
+    "category": "User Management",
+    "description": "Shows a list of recent user logins.",
+    "example_output": "user pts/0 192.168.1.100 Wed May 21 11:02 still logged in\nreboot system boot 5.15.0-73 Wed May 21 09:02",
+    "man_reference": "https://man7.org/linux/man-pages/man1/last.1.html"
+  },
+  {
+    "id": "cmd-208",
+    "command": "who -b",
+    "category": "User Management",
+    "description": "Shows the time of the last system boot.",
+    "example_output": "system boot 2025-05-21 09:02",
+    "man_reference": "https://man7.org/linux/man-pages/man1/who.1.html"
+  },
+  {
+    "id": "cmd-209",
+    "command": "usermod -c 'Full Name' user",
+    "category": "User Management",
+    "description": "Sets the GECOS comment field for user to 'Full Name'.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/usermod.8.html"
+  },
+  {
+    "id": "cmd-210",
+    "command": "groupdel oldgroup",
+    "category": "User Management",
+    "description": "Deletes the group oldgroup.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/groupdel.8.html"
+  },
+  {
+    "id": "cmd-211",
+    "command": "passwd -l user",
+    "category": "User Management",
+    "description": "Locks the password for user, disabling login.",
+    "example_output": "passwd: Success",
+    "man_reference": "https://man7.org/linux/man-pages/man1/passwd.1.html"
+  },
+  {
+    "id": "cmd-212",
+    "command": "chage -E 2025-12-31 user",
+    "category": "User Management",
+    "description": "Sets the account expiration date for user to Dec 31, 2025.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/chage.8.html"
+  },
+  {
+    "id": "cmd-213",
+    "command": "finger user",
+    "category": "User Management",
+    "description": "Displays information about user, including login and mail status.",
+    "example_output": "Login: user Name: User Full Name\nDirectory: /home/user Shell: /bin/bash\nLast login Wed May 21 11:02 2025 (IST) on pts/0 from 192.168.1.100",
+    "man_reference": "https://man7.org/linux/man-pages/man1/finger.1.html"
+  },
+  {
+    "id": "cmd-235",
+    "command": "who -u",
+    "category": "User Management",
+    "description": "Lists logged-in users with idle time and PID.",
+    "example_output": "user pts/0 2025-05-21 11:02 0.00s 1234 bash",
+    "man_reference": "https://man7.org/linux/man-pages/man1/who.1.html"
+  },
+  {
+    "id": "cmd-236",
+    "command": "chage -l user",
+    "category": "User Management",
+    "description": "Displays password and account aging information for user.",
+    "example_output": "Last password change : May 21, 2025\nPassword expires : never\nAccount expires : Dec 31, 2025",
+    "man_reference": "https://man7.org/linux/man-pages/man8/chage.8.html"
+  },
+  {
+    "id": "cmd-248",
+    "command": "passwd -u user",
+    "category": "User Management",
+    "description": "Unlocks the password for user, enabling login.",
+    "example_output": "passwd: Success",
+    "man_reference": "https://man7.org/linux/man-pages/man1/passwd.1.html"
+  },
+  {
+    "id": "cmd-279",
+    "command": "who -r",
+    "category": "User Management",
+    "description": "Displays the current run-level of the system.",
+    "example_output": "run-level 5 2025-05-21 09:02",
+    "man_reference": "https://man7.org/linux/man-pages/man1/who.1.html"
+  },
+  {
+    "id": "cmd-280",
+    "command": "chfn -f 'Full Name' user",
+    "category": "User Management",
+    "description": "Sets the full name for user in the GECOS field.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chfn.1.html"
+  },
+  {
+    "id": "cmd-281",
+    "command": "newgrp group",
+    "category": "User Management",
+    "description": "Switches the current session to the specified group.",
+    "example_output": "[No output, changes group]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/newgrp.1.html"
+  },
+  {
+    "id": "cmd-322",
+    "command": "chsh -s /bin/zsh user",
+    "category": "User Management",
+    "description": "Changes the login shell for user to zsh.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chsh.1.html"
+  },
+  {
+    "id": "cmd-323",
+    "command": "id -Gn user",
+    "category": "User Management",
+    "description": "Lists all group names for user.",
+    "example_output": "user sudo adm",
+    "man_reference": "https://man7.org/linux/man-pages/man1/id.1.html"
+  },
+  {
+    "id": "cmd-324",
+    "command": "getent passwd user",
+    "category": "User Management",
+    "description": "Displays passwd database entry for user.",
+    "example_output": "user:x:1000:1000:User Full Name:/home/user:/bin/bash",
+    "man_reference": "https://man7.org/linux/man-pages/man1/getent.1.html"
+  },
+  {
+    "id": "cmd-349",
+    "command": "who -H",
+    "category": "User Management",
+    "description": "Lists logged-in users with column headers.",
+    "example_output": "NAME LINE TIME HOST\nuser pts/0 2025-05-21 11:02 192.168.1.100",
+    "man_reference": "https://man7.org/linux/man-pages/man1/who.1.html"
+  },
+  {
+    "id": "cmd-387",
+    "command": "pwgen -s 16 1",
+    "category": "User Management",
+    "description": "Generates one secure 16-character random password.",
+    "example_output": "X7pL9qW3zT2mY8nR",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pwgen.1.html"
+  },
+  {
+    "id": "cmd-388",
+    "command": "addgroup --gid 2000 newgroup",
+    "category": "User Management",
+    "description": "Creates a group named newgroup with GID 2000.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/addgroup.8.html"
+  },
+  {
+    "id": "cmd-389",
+    "command": "usermod -e 2025-12-31 user",
+    "category": "User Management",
+    "description": "Sets the account expiration date for user to Dec 31, 2025.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/usermod.8.html"
+  },
+  {
+    "id": "cmd-390",
+    "command": "lastlog",
+    "category": "User Management",
+    "description": "Displays last login information for all users.",
+    "example_output": "Username Port From Latest\nuser pts/0 192.168.1.100 Wed May 21 11:02:00 2025",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lastlog.8.html"
+  },
+  {
+    "id": "cmd-391",
+    "command": "faillog -u user",
+    "category": "User Management",
+    "description": "Displays failed login attempts for user.",
+    "example_output": "Username Failures Maximum Latest\nuser 2 5 Wed May 21 11:02:00 2025 on pts/0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/faillog.8.html"
+  },
+  {
+    "id": "cmd-426",
+    "command": "who -T",
+    "category": "User Management",
+    "description": "Lists logged-in users with message status.",
+    "example_output": "user + pts/0 2025-05-21 11:02 192.168.1.100",
+    "man_reference": "https://man7.org/linux/man-pages/man1/who.1.html"
+  },
+  {
+    "id": "cmd-427",
+    "command": "useradd -m -s /bin/zsh newuser",
+    "category": "User Management",
+    "description": "Creates newuser with a home directory and zsh as the default shell.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/useradd.8.html"
+  },
+  {
+    "id": "cmd-428",
+    "command": "getent group sudo",
+    "category": "User Management",
+    "description": "Displays the sudo group entry from the group database.",
+    "example_output": "sudo:x:27:user1,user2",
+    "man_reference": "https://man7.org/linux/man-pages/man1/getent.1.html"
+  },
+  {
+    "id": "cmd-429",
+    "command": "pwck",
+    "category": "User Management",
+    "description": "Verifies the integrity of password files.",
+    "example_output": "user 'user': directory '/home/user' does not exist\npwck: no changes",
+    "man_reference": "https://man7.org/linux/man-pages/man8/pwck.8.html"
+  },
+  {
+    "id": "cmd-430",
+    "command": "grpck",
+    "category": "User Management",
+    "description": "Verifies the integrity of group files.",
+    "example_output": "no changes",
+    "man_reference": "https://man7.org/linux/man-pages/man8/grpck.8.html"
+  },
+  {
+    "id": "cmd-498",
+    "command": "lslogins",
+    "category": "User Management",
+    "description": "Displays information about user accounts and their login history.",
+    "example_output": "UID USER PWD-LOCK PWD-DENY LAST-LOGIN GECOS\n1000 user 0 0 2025-05-21T11:02 User Full Name",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lslogins.1.html"
+  },
+  {
+    "id": "cmd-499",
+    "command": "pwconv",
+    "category": "User Management",
+    "description": "Converts passwd entries to use shadow passwords.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/pwconv.8.html"
+  },
+  {
+    "id": "cmd-500",
+    "command": "grpconv",
+    "category": "User Management",
+    "description": "Converts group entries to use shadow groups.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/grpconv.8.html"
+  },
+  {
+    "id": "cmd-501",
+    "command": "chage -M 90 user",
+    "category": "User Management",
+    "description": "Sets the maximum password age for user to 90 days.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/chage.8.html"
+  },
+  {
+    "id": "cmd-502",
+    "command": "last -x",
+    "category": "User Management",
+    "description": "Displays system login, logout, and other events like reboots.",
+    "example_output": "user pts/0 192.168.1.100 Wed May 21 11:02 still logged in\nreboot system boot 5.15.0 Wed May 21 09:02",
+    "man_reference": "https://man7.org/linux/man-pages/man1/last.1.html"
+  },
+  {
+    "id": "cmd-503",
+    "command": "authconfig --test",
+    "category": "User Management",
+    "description": "Displays current authentication configuration.",
+    "example_output": "caching is enabled\nnsswitch.conf: files sss\nPAM: pam_unix pam_sss",
+    "man_reference": "https://man7.org/linux/man-pages/man8/authconfig.8.html"
+  },
+  {
+    "id": "cmd-504",
+    "command": "nscd -i passwd",
+    "category": "User Management",
+    "description": "Invalidates the passwd cache in the Name Service Cache Daemon.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/nscd.8.html"
+  }
+]

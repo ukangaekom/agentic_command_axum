@@ -1,0 +1,522 @@
+[
+  {
+    "id": "cmd-029",
+    "command": "ps aux",
+    "category": "Process",
+    "description": "Lists all running processes with detailed information.",
+    "example_output": "user 1234 0.1 0.2 123456 7890 ? S 11:02 0:00 /usr/bin/python3",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ps.1.html"
+  },
+  {
+    "id": "cmd-030",
+    "command": "kill -9 1234",
+    "category": "Process",
+    "description": "Forcefully terminates the process with PID 1234.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/kill.1.html"
+  },
+  {
+    "id": "cmd-031",
+    "command": "htop",
+    "category": "Process",
+    "description": "Interactive process viewer with enhanced UI.",
+    "example_output": "[Interactive process monitor]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/htop.1.html"
+  },
+  {
+    "id": "cmd-057",
+    "command": "ps -ef",
+    "category": "Process",
+    "description": "Lists all processes with full details.",
+    "example_output": "uid 1234 user 0.0 0.1 123456 7890 ? S 11:02 0:00 /usr/bin/python3",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ps.1.html"
+  },
+  {
+    "id": "cmd-058",
+    "command": "kill 1234",
+    "category": "Process",
+    "description": "Terminates the process with PID 1234 gracefully.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/kill.1.html"
+  },
+  {
+    "id": "cmd-059",
+    "command": "htop -u user",
+    "category": "Process",
+    "description": "Shows processes for a specific user in htop.",
+    "example_output": "[Interactive process monitor for user]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/htop.1.html"
+  },
+  {
+    "id": "cmd-099",
+    "command": "ps -C nginx",
+    "category": "Process",
+    "description": "Lists processes with the command name nginx.",
+    "example_output": "PID TTY TIME CMD\n1234 ? 00:00:01 nginx",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ps.1.html"
+  },
+  {
+    "id": "cmd-100",
+    "command": "killall nginx",
+    "category": "Process",
+    "description": "Terminates all nginx processes.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/killall.1.html"
+  },
+  {
+    "id": "cmd-101",
+    "command": "htop -d 5",
+    "category": "Process",
+    "description": "Runs htop with a 0.5-second refresh interval.",
+    "example_output": "[Interactive process monitor]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/htop.1.html"
+  },
+  {
+    "id": "cmd-126",
+    "command": "ps -u user",
+    "category": "Process",
+    "description": "Lists processes owned by user.",
+    "example_output": "PID TTY TIME CMD\n1234 ? 00:00:01 bash",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ps.1.html"
+  },
+  {
+    "id": "cmd-127",
+    "command": "pkill -u user",
+    "category": "Process",
+    "description": "Terminates all processes owned by user.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pkill.1.html"
+  },
+  {
+    "id": "cmd-128",
+    "command": "htop -t",
+    "category": "Process",
+    "description": "Runs htop with a tree view of processes.",
+    "example_output": "[Interactive process monitor with tree view]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/htop.1.html"
+  },
+  {
+    "id": "cmd-149",
+    "command": "ps -p 1234",
+    "category": "Process",
+    "description": "Displays information about the process with PID 1234.",
+    "example_output": "PID TTY TIME CMD\n1234 ? 00:00:01 nginx",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ps.1.html"
+  },
+  {
+    "id": "cmd-214",
+    "command": "nice -n 10 command",
+    "category": "Process",
+    "description": "Runs command with a nice value of 10 (lower priority).",
+    "example_output": "[Output depends on command]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nice.1.html"
+  },
+  {
+    "id": "cmd-215",
+    "command": "renice 5 1234",
+    "category": "Process",
+    "description": "Changes the priority of process with PID 1234 to 5.",
+    "example_output": "1234 (process ID) old priority 0, new priority 5",
+    "man_reference": "https://man7.org/linux/man-pages/man1/renice.1.html"
+  },
+  {
+    "id": "cmd-216",
+    "command": "top -u user",
+    "category": "Process",
+    "description": "Displays processes owned by user in top.",
+    "example_output": "[Interactive process monitor for user]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/top.1.html"
+  },
+  {
+    "id": "cmd-217",
+    "command": "pstree -p",
+    "category": "Process",
+    "description": "Displays a tree of processes with PIDs.",
+    "example_output": "systemd(1)─┬─sshd(1234)─┬─bash(1235)\n           └─nginx(1236)",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pstree.1.html"
+  },
+  {
+    "id": "cmd-218",
+    "command": "kill -SIGTERM 1234",
+    "category": "Process",
+    "description": "Sends the SIGTERM signal to the process with PID 1234.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/kill.1.html"
+  },
+  {
+    "id": "cmd-219",
+    "command": "pgrep nginx",
+    "category": "Process",
+    "description": "Lists PIDs of processes named nginx.",
+    "example_output": "1234\n1235",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pgrep.1.html"
+  },
+  {
+    "id": "cmd-237",
+    "command": "top -b -n 1",
+    "category": "Process",
+    "description": "Runs top in batch mode for one iteration.",
+    "example_output": "PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND\n1234 user 20 0 123456 7890 1234 S 0.0 0.1 0:00.01 bash",
+    "man_reference": "https://man7.org/linux/man-pages/man1/top.1.html"
+  },
+  {
+    "id": "cmd-238",
+    "command": "pkill -9 nginx",
+    "category": "Process",
+    "description": "Forcefully terminates all nginx processes.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pkill.1.html"
+  },
+  {
+    "id": "cmd-249",
+    "command": "kill -SIGKILL 1234",
+    "category": "Process",
+    "description": "Sends the SIGKILL signal to the process with PID 1234.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/kill.1.html"
+  },
+  {
+    "id": "cmd-282",
+    "command": "at now + 1 hour",
+    "category": "Process",
+    "description": "Schedules a command to run in one hour.",
+    "example_output": "job 1 at Wed May 21 12:02:00 2025",
+    "man_reference": "https://man7.org/linux/man-pages/man1/at.1.html"
+  },
+  {
+    "id": "cmd-283",
+    "command": "crontab -l",
+    "category": "Process",
+    "description": "Lists the current user's cron jobs.",
+    "example_output": "* * * * * /script.sh",
+    "man_reference": "https://man7.org/linux/man-pages/man1/crontab.1.html"
+  },
+  {
+    "id": "cmd-284",
+    "command": "nohup command &",
+    "category": "Process",
+    "description": "Runs command immune to hangups, with output to nohup.out.",
+    "example_output": "[1] 1234",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nohup.1.html"
+  },
+  {
+    "id": "cmd-302",
+    "command": "time command",
+    "category": "Process",
+    "description": "Measures the execution time of command.",
+    "example_output": "real 0m0.123s\nuser 0m0.100s\nsys 0m0.020s",
+    "man_reference": "https://man7.org/linux/man-pages/man1/time.1.html"
+  },
+  {
+    "id": "cmd-303",
+    "command": "batch",
+    "category": "Process",
+    "description": "Schedules commands to run when system load is low.",
+    "example_output": "job 2 at Wed May 21 11:02:00 2025",
+    "man_reference": "https://man7.org/linux/man-pages/man1/batch.1.html"
+  },
+  {
+    "id": "cmd-304",
+    "command": "disown -h %1",
+    "category": "Process",
+    "description": "Marks job 1 to continue running after terminal exit.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/disown.1.html"
+  },
+  {
+    "id": "cmd-305",
+    "command": "jobs -l",
+    "category": "Process",
+    "description": "Lists background jobs with PIDs.",
+    "example_output": "[1]+ 1234 Running command &",
+    "man_reference": "https://man7.org/linux/man-pages/man1/jobs.1.html"
+  },
+  {
+    "id": "cmd-306",
+    "command": "fg %1",
+    "category": "Process",
+    "description": "Brings job 1 to the foreground.",
+    "example_output": "[Resumes job in foreground]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fg.1.html"
+  },
+  {
+    "id": "cmd-316",
+    "command": "fuser -v /var/log/syslog",
+    "category": "Process",
+    "description": "Lists processes accessing /var/log/syslog.",
+    "example_output": "USER PID ACCESS COMMAND\n/var/log/syslog: root 1234 F.... rsyslogd",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fuser.1.html"
+  },
+  {
+    "id": "cmd-317",
+    "command": "ltrace -p 1234",
+    "category": "Process",
+    "description": "Traces library calls made by the process with PID 1234.",
+    "example_output": "[Library call trace output]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ltrace.1.html"
+  },
+  {
+    "id": "cmd-318",
+    "command": "strace -p 1234",
+    "category": "Process",
+    "description": "Traces system calls made by the process with PID 1234.",
+    "example_output": "[System call trace output]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/strace.1.html"
+  },
+  {
+    "id": "cmd-339",
+    "command": "atq",
+    "category": "Process",
+    "description": "Lists pending jobs scheduled with at.",
+    "example_output": "1 Wed May 21 12:02:00 2025 a user",
+    "man_reference": "https://man7.org/linux/man-pages/man1/atq.1.html"
+  },
+  {
+    "id": "cmd-340",
+    "command": "bg %1",
+    "category": "Process",
+    "description": "Resumes job 1 in the background.",
+    "example_output": "[1]+ command &",
+    "man_reference": "https://man7.org/linux/man-pages/man1/bg.1.html"
+  },
+  {
+    "id": "cmd-350",
+    "command": "timeout 10s command",
+    "category": "Process",
+    "description": "Runs command with a 10-second timeout.",
+    "example_output": "[Output of command or timeout error]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/timeout.1.html"
+  },
+  {
+    "id": "cmd-392",
+    "command": "crontab -u user -l",
+    "category": "Process",
+    "description": "Lists cron jobs for user.",
+    "example_output": "* * * * * /script.sh",
+    "man_reference": "https://man7.org/linux/man-pages/man1/crontab.1.html"
+  },
+  {
+    "id": "cmd-393",
+    "command": "systemctl status nginx",
+    "category": "Process",
+    "description": "Shows the status of the nginx service.",
+    "example_output": "● nginx.service - A high performance web server\nActive: active (running) since Wed 2025-05-21 11:02:00",
+    "man_reference": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+  },
+  {
+    "id": "cmd-394",
+    "command": "pidstat -w 1 3",
+    "category": "Process",
+    "description": "Reports task switching activity every second for 3 iterations.",
+    "example_output": "11:02:00 PID cswch/s nvcswch/s Command\n11:02:01 1234 10.00 5.00 nginx",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pidstat.1.html"
+  },
+  {
+    "id": "cmd-395",
+    "command": "lscgroup",
+    "category": "Process",
+    "description": "Lists control groups in the system.",
+    "example_output": "cpu,cpuacct:/user.slice/user-1000.slice/session-1.scope",
+    "man_reference": "https://man7.org/linux/man-pages/man1/lscgroup.1.html"
+  },
+  {
+    "id": "cmd-396",
+    "command": "ionice -c3 command",
+    "category": "Process",
+    "description": "Runs command with idle I/O priority.",
+    "example_output": "[Output depends on command]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ionice.1.html"
+  },
+  {
+    "id": "cmd-397",
+    "command": "taskset -cp 0-3 1234",
+    "category": "Process",
+    "description": "Binds process with PID 1234 to CPUs 0-3.",
+    "example_output": "pid 1234's current affinity list: 0-7\npid 1234's new affinity list: 0-3",
+    "man_reference": "https://man7.org/linux/man-pages/man1/taskset.1.html"
+  },
+  {
+    "id": "cmd-408",
+    "command": "lsof -p 1234",
+    "category": "Process",
+    "description": "Lists open files for the process with PID 1234.",
+    "example_output": "COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME\nnginx 1234 user cwd DIR 8,1 4096 12345 /var/www",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsof.8.html"
+  },
+  {
+    "id": "cmd-409",
+    "command": "pmap -x 1234",
+    "category": "Process",
+    "description": "Displays the memory map for the process with PID 1234.",
+    "example_output": "Address Kbytes RSS Dirty Mode Mapping\n00007f00 1234 567 89 r-x-- libc-2.31.so",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pmap.1.html"
+  },
+  {
+    "id": "cmd-419",
+    "command": "ltrace -S -p 1234",
+    "category": "Process",
+    "description": "Traces both library and system calls for the process with PID 1234.",
+    "example_output": "[System and library call trace output]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ltrace.1.html"
+  },
+  {
+    "id": "cmd-420",
+    "command": "strace -c -p 1234",
+    "category": "Process",
+    "description": "Summarizes system call usage for the process with PID 1234.",
+    "example_output": "% time seconds usecs/call calls syscall\n50.00 0.000100 10 10 read\n30.00 0.000060 12 5 write",
+    "man_reference": "https://man7.org/linux/man-pages/man1/strace.1.html"
+  },
+  {
+    "id": "cmd-421",
+    "command": "gdb --pid 1234",
+    "category": "Process",
+    "description": "Attaches the GNU Debugger to the process with PID 1234.",
+    "example_output": "(gdb) [Interactive debugger interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/gdb.1.html"
+  },
+  {
+    "id": "cmd-422",
+    "command": "perf stat -p 1234",
+    "category": "Process",
+    "description": "Collects performance statistics for the process with PID 1234.",
+    "example_output": "1234.567 ms task-clock\n1234567 cycles\n2345678 instructions",
+    "man_reference": "https://man7.org/linux/man-pages/man1/perf-stat.1.html"
+  },
+  {
+    "id": "cmd-462",
+    "command": "ionice -c2 -p 1234",
+    "category": "Process",
+    "description": "Sets I/O scheduling class to best-effort for process with PID 1234.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ionice.1.html"
+  },
+  {
+    "id": "cmd-463",
+    "command": "prlimit --pid 1234 --nofile=1024",
+    "category": "Process",
+    "description": "Sets the open file limit to 1024 for process with PID 1234.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/prlimit.1.html"
+  },
+  {
+    "id": "cmd-464",
+    "command": "pidof nginx",
+    "category": "Process",
+    "description": "Returns PIDs of running nginx processes.",
+    "example_output": "1234 1235",
+    "man_reference": "https://man7.org/linux/man-pages/man8/pidof.8.html"
+  },
+  {
+    "id": "cmd-465",
+    "command": "htop -u user",
+    "category": "Process",
+    "description": "Runs htop filtered to show only processes owned by user.",
+    "example_output": "[Interactive process viewer for user]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/htop.1.html"
+  },
+  {
+    "id": "cmd-466",
+    "command": "bpftrace -e 'tracepoint:syscalls:sys_enter_openat { printf(\"%s opened %s\n\", comm, str(args->filename)); }'",
+    "category": "Process",
+    "description": "Traces file open system calls using eBPF, printing process and file names.",
+    "example_output": "nginx opened /var/log/nginx/access.log",
+    "man_reference": "https://man7.org/linux/man-pages/man8/bpftrace.8.html"
+  },
+  {
+    "id": "cmd-505",
+    "command": "atrm 1",
+    "category": "Process",
+    "description": "Removes the scheduled job with ID 1 from the at queue.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/atrm.1.html"
+  },
+  {
+    "id": "cmd-506",
+    "command": "systemd-cgtop",
+    "category": "Process",
+    "description": "Displays resource usage by control groups.",
+    "example_output": "Control Group Tasks %CPU Memory Input/s Output/s\n/user.slice/user-1000.slice 10 5.0 500M 100K 200K",
+    "man_reference": "https://man7.org/linux/man-pages/man1/systemd-cgtop.1.html"
+  },
+  {
+    "id": "cmd-576",
+    "command": "perf record -p 1234",
+    "category": "Process",
+    "description": "Records performance data for the process with PID 1234.",
+    "example_output": "[ perf record: Woken up 1 times to write data ]\n[ perf record: Captured and wrote 0.123 MB perf.data ]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/perf-record.1.html"
+  },
+  {
+    "id": "cmd-577",
+    "command": "perf report",
+    "category": "Process",
+    "description": "Displays performance analysis from the last perf record.",
+    "example_output": "Samples: 1234 of event 'cycles'\n50.00% nginx libc.so [.] read\n30.00% nginx nginx [.] process_request",
+    "man_reference": "https://man7.org/linux/man-pages/man1/perf-report.1.html"
+  },
+  {
+    "id": "cmd-585",
+    "command": "pidstat -d 1 3",
+    "category": "Process",
+    "description": "Reports disk I/O statistics for processes every second for 3 iterations.",
+    "example_output": "11:02:00 PID kB_rd/s kB_wr/s kB_ccwr/s Command\n11:02:01 1234 100.00 200.00 0.00 nginx",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pidstat.1.html"
+  },
+  {
+    "id": "cmd-586",
+    "command": "systemctl list-dependencies nginx",
+    "category": "Process",
+    "description": "Lists dependencies of the nginx service.",
+    "example_output": "nginx.service\n● ├─system.slice\n● └─basic.target",
+    "man_reference": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+  },
+  {
+    "id": "cmd-587",
+    "command": "systemctl is-enabled nginx",
+    "category": "Process",
+    "description": "Checks if the nginx service is enabled at boot.",
+    "example_output": "enabled",
+    "man_reference": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+  },
+  {
+    "id": "cmd-588",
+    "command": "bpftool prog list",
+    "category": "Process",
+    "description": "Lists loaded eBPF programs.",
+    "example_output": "1: cgroup/skb name filter tag 1234567890abcdef\nloaded_at 2025-05-21T11:02:00",
+    "man_reference": "https://man7.org/linux/man-pages/man8/bpftool.8.html"
+  },
+  {
+    "id": "cmd-589",
+    "command": "bpftool map list",
+    "category": "Process",
+    "description": "Lists loaded eBPF maps.",
+    "example_output": "1: hash name mymap flags 0x0\nkey 4B value 8B max_entries 100",
+    "man_reference": "https://man7.org/linux/man-pages/man8/bpftool.8.html"
+  },
+  {
+    "id": "cmd-590",
+    "command": "trace-cmd record -p function -P 1234",
+    "category": "Process",
+    "description": "Records function traces for the process with PID 1234.",
+    "example_output": "[Tracing started, writing to trace.dat]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/trace-cmd.1.html"
+  },
+  {
+    "id": "cmd-591",
+    "command": "trace-cmd report",
+    "category": "Process",
+    "description": "Displays the trace data from the last trace-cmd record.",
+    "example_output": "nginx-1234 [000] 1234.567: func: sys_open\nnginx-1234 [000] 1234.568: func: sys_read",
+    "man_reference": "https://man7.org/linux/man-pages/man1/trace-cmd.1.html"
+  },
+  {
+    "id": "cmd-592",
+    "command": "fuser -k /var/log/syslog",
+    "category": "Process",
+    "description": "Terminates processes accessing /var/log/syslog.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/fuser.1.html"
+  }
+]

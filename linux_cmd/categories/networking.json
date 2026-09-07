@@ -1,0 +1,610 @@
+[
+  {
+    "id": "cmd-023",
+    "command": "ping -c 4 google.com",
+    "category": "Networking",
+    "description": "Sends 4 ICMP echo requests to google.com to check connectivity.",
+    "example_output": "4 packets transmitted, 4 received, 0% packet loss, time 3004ms",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ping.8.html"
+  },
+  {
+    "id": "cmd-024",
+    "command": "ifconfig",
+    "category": "Networking",
+    "description": "Displays network interface configuration.",
+    "example_output": "eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500\ninet 192.168.1.100",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ifconfig.8.html"
+  },
+  {
+    "id": "cmd-025",
+    "command": "netstat -tulpn",
+    "category": "Networking",
+    "description": "Lists listening ports and associated processes.",
+    "example_output": "tcp 0 0 0.0.0.0:22 0.0.0.0:* LISTEN 1234/sshd",
+    "man_reference": "https://man7.org/linux/man-pages/man8/netstat.8.html"
+  },
+  {
+    "id": "cmd-051",
+    "command": "ping 8.8.8.8",
+    "category": "Networking",
+    "description": "Sends ICMP echo requests to Google's public DNS server.",
+    "example_output": "64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=20.0 ms",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ping.8.html"
+  },
+  {
+    "id": "cmd-052",
+    "command": "ifconfig eth0",
+    "category": "Networking",
+    "description": "Displays configuration for the eth0 network interface.",
+    "example_output": "eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500\ninet 192.168.1.100",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ifconfig.8.html"
+  },
+  {
+    "id": "cmd-053",
+    "command": "netstat -an",
+    "category": "Networking",
+    "description": "Lists all active network connections and ports.",
+    "example_output": "tcp 0 0 0.0.0.0:22 0.0.0.0:* LISTEN",
+    "man_reference": "https://man7.org/linux/man-pages/man8/netstat.8.html"
+  },
+  {
+    "id": "cmd-093",
+    "command": "ping -i 0.5 google.com",
+    "category": "Networking",
+    "description": "Sends ICMP echo requests to google.com every 0.5 seconds.",
+    "example_output": "64 bytes from google.com: icmp_seq=1 ttl=117 time=20.0 ms",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ping.8.html"
+  },
+  {
+    "id": "cmd-094",
+    "command": "ifconfig eth0 up",
+    "category": "Networking",
+    "description": "Enables the eth0 network interface.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ifconfig.8.html"
+  },
+  {
+    "id": "cmd-095",
+    "command": "netstat -i",
+    "category": "Networking",
+    "description": "Displays network interface statistics.",
+    "example_output": "Iface MTU RX-OK RX-ERR RX-DRP RX-OVR TX-OK TX-ERR TX-DRP TX-OVR Flg\neth0 1500 12345 0 0 0 12345 0 0 0 BMRU",
+    "man_reference": "https://man7.org/linux/man-pages/man8/netstat.8.html"
+  },
+  {
+    "id": "cmd-120",
+    "command": "ping -c 2 192.168.1.1",
+    "category": "Networking",
+    "description": "Sends 2 ICMP echo requests to the IP 192.168.1.1.",
+    "example_output": "2 packets transmitted, 2 received, 0% packet loss, time 1002ms",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ping.8.html"
+  },
+  {
+    "id": "cmd-121",
+    "command": "ifconfig eth0 down",
+    "category": "Networking",
+    "description": "Disables the eth0 network interface.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ifconfig.8.html"
+  },
+  {
+    "id": "cmd-122",
+    "command": "netstat -r",
+    "category": "Networking",
+    "description": "Displays the kernel routing table.",
+    "example_output": "Destination Gateway Genmask Flags MSS Window irtt Iface\ndefault 192.168.1.1 0.0.0.0 UG 0 0 0 eth0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/netstat.8.html"
+  },
+  {
+    "id": "cmd-146",
+    "command": "ping -s 100 google.com",
+    "category": "Networking",
+    "description": "Sends ICMP echo requests to google.com with 100-byte packets.",
+    "example_output": "64 bytes from google.com: icmp_seq=1 ttl=117 time=20.0 ms",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ping.8.html"
+  },
+  {
+    "id": "cmd-147",
+    "command": "netstat -s",
+    "category": "Networking",
+    "description": "Displays network protocol statistics.",
+    "example_output": "Ip:\n12345 total packets received\n0 forwarded\n0 incoming packets discarded",
+    "man_reference": "https://man7.org/linux/man-pages/man8/netstat.8.html"
+  },
+  {
+    "id": "cmd-201",
+    "command": "ip addr show",
+    "category": "Networking",
+    "description": "Displays IP addresses and interface details.",
+    "example_output": "2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000\ninet 192.168.1.100/24 brd 192.168.1.255 scope global eth0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-202",
+    "command": "ss -tulwn",
+    "category": "Networking",
+    "description": "Lists listening TCP and UDP sockets with numeric addresses.",
+    "example_output": "Netid State Recv-Q Send-Q Local Address:Port Peer Address:Port\ntcp LISTEN 0 128 0.0.0.0:22 0.0.0.0:*",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ss.8.html"
+  },
+  {
+    "id": "cmd-203",
+    "command": "arp -n",
+    "category": "Networking",
+    "description": "Displays the ARP cache without resolving hostnames.",
+    "example_output": "Address HWtype HWaddress Flags Mask Iface\n192.168.1.1 ether 00:14:22:01:23:45 C eth0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/arp.8.html"
+  },
+  {
+    "id": "cmd-204",
+    "command": "route -n",
+    "category": "Networking",
+    "description": "Displays the routing table with numeric addresses.",
+    "example_output": "Destination Gateway Genmask Flags Metric Ref Use Iface\n0.0.0.0 192.168.1.1 0.0.0.0 UG 100 0 0 eth0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/route.8.html"
+  },
+  {
+    "id": "cmd-205",
+    "command": "ip link show",
+    "category": "Networking",
+    "description": "Lists network interfaces and their status.",
+    "example_output": "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\n2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-206",
+    "command": "ss -anp",
+    "category": "Networking",
+    "description": "Lists all sockets with associated processes.",
+    "example_output": "tcp LISTEN 0 128 0.0.0.0:22 0.0.0.0:* users:(('sshd',pid=1234,fd=3))",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ss.8.html"
+  },
+  {
+    "id": "cmd-207",
+    "command": "traceroute google.com",
+    "category": "Networking",
+    "description": "Traces the route packets take to google.com.",
+    "example_output": "1 192.168.1.1 (192.168.1.1) 0.123 ms\n2 10.0.0.1 (10.0.0.1) 1.234 ms",
+    "man_reference": "https://man7.org/linux/man-pages/man8/traceroute.8.html"
+  },
+  {
+    "id": "cmd-229",
+    "command": "ip route show",
+    "category": "Networking",
+    "description": "Displays the IP routing table.",
+    "example_output": "default via 192.168.1.1 dev eth0 proto dhcp metric 100\n192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.100 metric 100",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-230",
+    "command": "ss -tuln",
+    "category": "Networking",
+    "description": "Lists listening TCP and UDP sockets.",
+    "example_output": "Netid State Recv-Q Send-Q Local Address:Port Peer Address:Port\ntcp LISTEN 0 128 0.0.0.0:22 0.0.0.0:*",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ss.8.html"
+  },
+  {
+    "id": "cmd-247",
+    "command": "ip addr add 192.168.1.101/24 dev eth0",
+    "category": "Networking",
+    "description": "Assigns IP address 192.168.1.101/24 to eth0.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-264",
+    "command": "lsof -i :80",
+    "category": "Networking",
+    "description": "Lists processes using port 80.",
+    "example_output": "COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME\nnginx 1234 user 4u IPv4 12345 0t0 TCP *:80 (LISTEN)",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsof.8.html"
+  },
+  {
+    "id": "cmd-265",
+    "command": "tcpdump -i eth0",
+    "category": "Networking",
+    "description": "Captures packets on the eth0 interface.",
+    "example_output": "11:02:00.123456 IP 192.168.1.100 > 8.8.8.8: ICMP echo request",
+    "man_reference": "https://man7.org/linux/man-pages/man8/tcpdump.8.html"
+  },
+  {
+    "id": "cmd-266",
+    "command": "nslookup google.com",
+    "category": "Networking",
+    "description": "Queries DNS for google.com's IP address.",
+    "example_output": "Server: 8.8.8.8\nAddress: 142.250.190.14",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nslookup.1.html"
+  },
+  {
+    "id": "cmd-267",
+    "command": "dig google.com",
+    "category": "Networking",
+    "description": "Performs a detailed DNS lookup for google.com.",
+    "example_output": "google.com. 300 IN A 142.250.190.14",
+    "man_reference": "https://man7.org/linux/man-pages/man1/dig.1.html"
+  },
+  {
+    "id": "cmd-294",
+    "command": "ethtool eth0",
+    "category": "Networking",
+    "description": "Displays the status and settings of the eth0 interface.",
+    "example_output": "Settings for eth0:\nSpeed: 1000Mb/s\nDuplex: Full",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ethtool.8.html"
+  },
+  {
+    "id": "cmd-295",
+    "command": "ipset list",
+    "category": "Networking",
+    "description": "Lists configured IP sets for firewall rules.",
+    "example_output": "Name: myset\nType: hash:ip\nMembers:\n192.168.1.100",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ipset.8.html"
+  },
+  {
+    "id": "cmd-296",
+    "command": "iptables -L -v",
+    "category": "Networking",
+    "description": "Lists firewall rules with verbose output.",
+    "example_output": "Chain INPUT (policy ACCEPT 1234 packets, 56789 bytes)\npkts bytes target prot opt in out source destination\n0 0 DROP all -- eth0 any 192.168.1.100 anywhere",
+    "man_reference": "https://man7.org/linux/man-pages/man8/iptables.8.html"
+  },
+  {
+    "id": "cmd-319",
+    "command": "mtr google.com",
+    "category": "Networking",
+    "description": "Combines ping and traceroute to monitor network performance to google.com.",
+    "example_output": "Host Loss% Snt Last Avg Best Wrst StDev\n1. 192.168.1.1 0.0% 10 0.1 0.1 0.1 0.1 0.0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/mtr.8.html"
+  },
+  {
+    "id": "cmd-320",
+    "command": "nmap localhost",
+    "category": "Networking",
+    "description": "Scans open ports on localhost.",
+    "example_output": "Nmap scan report for localhost (127.0.0.1)\nPORT STATE SERVICE\n22/tcp open ssh",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nmap.1.html"
+  },
+  {
+    "id": "cmd-321",
+    "command": "host google.com",
+    "category": "Networking",
+    "description": "Performs a DNS lookup for google.com.",
+    "example_output": "google.com has address 142.250.190.14",
+    "man_reference": "https://man7.org/linux/man-pages/man1/host.1.html"
+  },
+  {
+    "id": "cmd-337",
+    "command": "arping 192.168.1.1",
+    "category": "Networking",
+    "description": "Sends ARP requests to 192.168.1.1 to resolve MAC address.",
+    "example_output": "ARPING 192.168.1.1\n60 bytes from 00:14:22:01:23:45 (192.168.1.1): index=0 time=0.123 ms",
+    "man_reference": "https://man7.org/linux/man-pages/man8/arping.8.html"
+  },
+  {
+    "id": "cmd-338",
+    "command": "ip neighbor show",
+    "category": "Networking",
+    "description": "Displays the ARP table with neighbor entries.",
+    "example_output": "192.168.1.1 dev eth0 lladdr 00:14:22:01:23:45 REACHABLE",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-380",
+    "command": "tcpdump -i eth0 port 80",
+    "category": "Networking",
+    "description": "Captures HTTP traffic on port 80 via eth0.",
+    "example_output": "11:02:00.123456 IP 192.168.1.100.12345 > 93.184.216.34.80: tcp 0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/tcpdump.8.html"
+  },
+  {
+    "id": "cmd-381",
+    "command": "nft list ruleset",
+    "category": "Networking",
+    "description": "Displays all active nftables firewall rules.",
+    "example_output": "table inet filter {\nchain input {\ntype filter hook input priority 0; policy accept;\n}\n}",
+    "man_reference": "https://man7.org/linux/man-pages/man8/nft.8.html"
+  },
+  {
+    "id": "cmd-382",
+    "command": "iptraf-ng -i eth0",
+    "category": "Networking",
+    "description": "Monitors network traffic on eth0 interactively.",
+    "example_output": "[Interactive traffic monitor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/iptraf-ng.8.html"
+  },
+  {
+    "id": "cmd-383",
+    "command": "hping3 -S 192.168.1.1",
+    "category": "Networking",
+    "description": "Sends TCP SYN packets to 192.168.1.1 for network probing.",
+    "example_output": "Hping 192.168.1.1: 64 bytes from 192.168.1.1: flags=SA seq=0 ttl=64",
+    "man_reference": "https://man7.org/linux/man-pages/man8/hping3.8.html"
+  },
+  {
+    "id": "cmd-384",
+    "command": "netcat -zv 192.168.1.1 22",
+    "category": "Networking",
+    "description": "Scans port 22 on 192.168.1.1 for connectivity.",
+    "example_output": "192.168.1.1 22 (ssh) open",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nc.1.html"
+  },
+  {
+    "id": "cmd-385",
+    "command": "ipset create myset hash:ip",
+    "category": "Networking",
+    "description": "Creates an IP set named myset for firewall rules.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ipset.8.html"
+  },
+  {
+    "id": "cmd-386",
+    "command": "tshark -i eth0 -c 10",
+    "category": "Networking",
+    "description": "Captures 10 packets on eth0 using Wireshark's terminal interface.",
+    "example_output": "1 0.000000 192.168.1.100 → 8.8.8.8 ICMP Echo (ping) request",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tshark.1.html"
+  },
+  {
+    "id": "cmd-410",
+    "command": "netstat -s | grep Tcp",
+    "category": "Networking",
+    "description": "Displays TCP protocol statistics.",
+    "example_output": "Tcp: 1234 segments received\n567 segments sent out",
+    "man_reference": "https://man7.org/linux/man-pages/man8/netstat.8.html"
+  },
+  {
+    "id": "cmd-411",
+    "command": "ip -s link",
+    "category": "Networking",
+    "description": "Shows network interface statistics.",
+    "example_output": "2: eth0: <BROADCAST,MULTICAST,UP> mtu 1500\nRX: bytes packets errors dropped\n1000 10 0 0\nTX: bytes packets errors dropped\n2000 20 0 0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-414",
+    "command": "sysdig -c netstat",
+    "category": "Networking",
+    "description": "Runs sysdig to display network connection statistics.",
+    "example_output": "Proto Recv-Q Send-Q Local Address Foreign Address State PID/Program name\ntcp 0 0 0.0.0.0:22 0.0.0.0:* LISTEN 1234/sshd",
+    "man_reference": "https://man7.org/linux/man-pages/man8/sysdig.8.html"
+  },
+  {
+    "id": "cmd-423",
+    "command": "nmap -sV 192.168.1.1",
+    "category": "Networking",
+    "description": "Scans 192.168.1.1 for open ports and service versions.",
+    "example_output": "PORT STATE SERVICE VERSION\n22/tcp open ssh OpenSSH 8.2p1",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nmap.1.html"
+  },
+  {
+    "id": "cmd-446",
+    "command": "netcat -l 12345",
+    "category": "Networking",
+    "description": "Listens for incoming connections on port 12345.",
+    "example_output": "[Waits for incoming data]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nc.1.html"
+  },
+  {
+    "id": "cmd-447",
+    "command": "watch -d 'netstat -tuln'",
+    "category": "Networking",
+    "description": "Runs 'netstat -tuln' every 2 seconds, highlighting changes.",
+    "example_output": "[Continuous netstat updates with highlighted changes]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/watch.1.html"
+  },
+  {
+    "id": "cmd-467",
+    "command": "lsof -iTCP -sTCP:LISTEN",
+    "category": "Networking",
+    "description": "Lists processes with open TCP listening sockets.",
+    "example_output": "COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME\nsshd 1234 root 3u IPv4 12345 0t0 TCP *:22 (LISTEN)",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsof.8.html"
+  },
+  {
+    "id": "cmd-468",
+    "command": "ip monitor",
+    "category": "Networking",
+    "description": "Monitors network interface and address changes in real-time.",
+    "example_output": "[1] eth0: <BROADCAST,MULTICAST,UP> mtu 1500 state UP\nNew address: 192.168.1.100",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-469",
+    "command": "ss -H -o",
+    "category": "Networking",
+    "description": "Lists sockets with options, suppressing header output.",
+    "example_output": "tcp ESTAB 0 0 192.168.1.100:12345 93.184.216.34:80 timer:(keepalive,119min,0)",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ss.8.html"
+  },
+  {
+    "id": "cmd-470",
+    "command": "ip link set eth0 mtu 9000",
+    "category": "Networking",
+    "description": "Sets the MTU of eth0 to 9000 for jumbo frames.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-471",
+    "command": "nping --tcp -p 80 192.168.1.1",
+    "category": "Networking",
+    "description": "Sends TCP probes to port 80 on 192.168.1.1 for network testing.",
+    "example_output": "SENT (0.1234s) TCP 192.168.1.100:12345 > 192.168.1.1:80 S ttl=64\nRCVD (0.1235s) TCP 192.168.1.1:80 > 192.168.1.100:12345 SA ttl=64",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nping.1.html"
+  },
+  {
+    "id": "cmd-472",
+    "command": "ipset add myset 192.168.1.100",
+    "category": "Networking",
+    "description": "Adds IP 192.168.1.100 to the IP set myset.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ipset.8.html"
+  },
+  {
+    "id": "cmd-473",
+    "command": "tcpflow -i eth0 port 80",
+    "category": "Networking",
+    "description": "Captures and saves TCP streams on port 80 via eth0.",
+    "example_output": "[Creates files like 192.168.001.100.12345-093.184.216.034.00080]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tcpflow.1.html"
+  },
+  {
+    "id": "cmd-474",
+    "command": "ngrep -q 'HTTP' port 80",
+    "category": "Networking",
+    "description": "Captures and displays HTTP packets on port 80.",
+    "example_output": "T 192.168.1.100:12345 -> 93.184.216.34:80 [AP]\nGET / HTTP/1.1",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ngrep.8.html"
+  },
+  {
+    "id": "cmd-475",
+    "command": "bmon -i eth0",
+    "category": "Networking",
+    "description": "Monitors bandwidth usage on eth0 interactively.",
+    "example_output": "[Interactive bandwidth monitor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/bmon.8.html"
+  },
+  {
+    "id": "cmd-476",
+    "command": "iftop -i eth0",
+    "category": "Networking",
+    "description": "Displays real-time bandwidth usage by connection on eth0.",
+    "example_output": "192.168.1.100:12345 => 93.184.216.34:80 100Kb 200Kb\n <= 50Kb 100Kb",
+    "man_reference": "https://man7.org/linux/man-pages/man8/iftop.8.html"
+  },
+  {
+    "id": "cmd-507",
+    "command": "sar -n DEV 1 3",
+    "category": "Networking",
+    "description": "Reports network device statistics every second for 3 iterations.",
+    "example_output": "11:02:00 IFACE rxpck/s txpck/s rxkB/s txkB/s\n11:02:01 eth0 100.00 200.00 10.00 20.00",
+    "man_reference": "https://man7.org/linux/man-pages/man1/sar.1.html"
+  },
+  {
+    "id": "cmd-508",
+    "command": "ethtool -S eth0",
+    "category": "Networking",
+    "description": "Displays detailed statistics for the eth0 interface.",
+    "example_output": "NIC statistics:\nrx_packets: 1234\ntx_packets: 5678\nrx_bytes: 100000\ntx_bytes: 200000",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ethtool.8.html"
+  },
+  {
+    "id": "cmd-509",
+    "command": "ip rule show",
+    "category": "Networking",
+    "description": "Displays policy routing rules.",
+    "example_output": "0: from all lookup local\n32766: from all lookup main\n32767: from all lookup default",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-510",
+    "command": "ip xfrm state",
+    "category": "Networking",
+    "description": "Lists IPsec security associations.",
+    "example_output": "src 192.168.1.100 dst 192.168.1.1\nproto esp spi 0x12345678 reqid 1 mode tunnel",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-511",
+    "command": "ip mroute show",
+    "category": "Networking",
+    "description": "Displays multicast routing table.",
+    "example_output": "(192.168.1.100, 239.255.255.250) Iif: eth0 Oifs: eth1",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-512",
+    "command": "tc qdisc show",
+    "category": "Networking",
+    "description": "Lists traffic control queueing disciplines.",
+    "example_output": "qdisc fq_codel 0: dev eth0 root refcnt 2 limit 10240p flows 1024 quantum 1514",
+    "man_reference": "https://man7.org/linux/man-pages/man8/tc.8.html"
+  },
+  {
+    "id": "cmd-513",
+    "command": "bridge link show",
+    "category": "Networking",
+    "description": "Displays bridge interfaces and their states.",
+    "example_output": "2: eth0: <BROADCAST,MULTICAST,UP> mtu 1500 master br0 state forwarding",
+    "man_reference": "https://man7.org/linux/man-pages/man8/bridge.8.html"
+  },
+  {
+    "id": "cmd-514",
+    "command": "ip netns list",
+    "category": "Networking",
+    "description": "Lists network namespaces.",
+    "example_output": "ns1 (id: 0)\nns2 (id: 1)",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-515",
+    "command": "ip netns exec ns1 ip addr",
+    "category": "Networking",
+    "description": "Runs ip addr command within the ns1 network namespace.",
+    "example_output": "1: lo: <LOOPBACK,UP> mtu 65536\ninet 127.0.0.1/8 scope host lo",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-516",
+    "command": "ncat --ssl 192.168.1.1 443",
+    "category": "Networking",
+    "description": "Establishes an SSL connection to 192.168.1.1 on port 443.",
+    "example_output": "[Interactive SSL connection]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ncat.1.html"
+  },
+  {
+    "id": "cmd-570",
+    "command": "ethtool -i eth0",
+    "category": "Networking",
+    "description": "Displays driver information for the eth0 interface.",
+    "example_output": "driver: e1000\nversion: 7.3.21-k8-NAPI\nfirmware-version: 0.5-3",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ethtool.8.html"
+  },
+  {
+    "id": "cmd-571",
+    "command": "ip -j addr",
+    "category": "Networking",
+    "description": "Displays network interface addresses in JSON format.",
+    "example_output": "[{\"ifname\":\"eth0\",\"addr_info\":[{\"family\":\"inet\",\"local\":\"192.168.1.100\"}]}]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ip.8.html"
+  },
+  {
+    "id": "cmd-572",
+    "command": "ss -M",
+    "category": "Networking",
+    "description": "Lists sockets with memory usage details.",
+    "example_output": "Netid State Recv-Q Send-Q Local Address:Port Peer Address:Port Mem(sk_buff)\ntcp ESTAB 0 0 192.168.1.100:12345 93.184.216.34:80 1234",
+    "man_reference": "https://man7.org/linux/man-pages/man8/ss.8.html"
+  },
+  {
+    "id": "cmd-573",
+    "command": "tcpdump -X -i eth0",
+    "category": "Networking",
+    "description": "Captures packets on eth0, displaying both hex and ASCII.",
+    "example_output": "11:02:00.123456 IP 192.168.1.100 > 8.8.8.8: ICMP echo request\n0x0000: 4500 0054 1234 4000 4001 1234 c0a8 0164\n0x0010: 0808 0808 0800 1234",
+    "man_reference": "https://man7.org/linux/man-pages/man8/tcpdump.8.html"
+  },
+  {
+    "id": "cmd-574",
+    "command": "nload eth0",
+    "category": "Networking",
+    "description": "Monitors network traffic on eth0 with a graphical interface.",
+    "example_output": "[Interactive traffic graph]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nload.1.html"
+  },
+  {
+    "id": "cmd-575",
+    "command": "ipcalc 192.168.1.0/24",
+    "category": "Networking",
+    "description": "Calculates network details for the 192.168.1.0/24 subnet.",
+    "example_output": "Address: 192.168.1.0\nNetmask: 255.255.255.0\nNetwork: 192.168.1.0/24\nHostMin: 192.168.1.1\nHostMax: 192.168.1.254",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ipcalc.1.html"
+  },
+  {
+    "id": "cmd-593",
+    "command": "lsof -t -i :80",
+    "category": "Networking",
+    "description": "Lists PIDs of processes using port 80.",
+    "example_output": "1234",
+    "man_reference": "https://man7.org/linux/man-pages/man8/lsof.8.html"
+  }
+]

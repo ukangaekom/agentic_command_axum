@@ -1,0 +1,210 @@
+[
+  {
+    "id": "cmd-032",
+    "command": "vim file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in the Vim text editor.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-033",
+    "command": "nano config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in the Nano text editor.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-060",
+    "command": "vim +10 file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in Vim at line 10.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-061",
+    "command": "nano -l config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in Nano with line numbers.",
+    "example_output": "[Interactive editor interface with line numbers]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-102",
+    "command": "vim -R file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in Vim in read-only mode.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-103",
+    "command": "nano -c config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in Nano with constant cursor position display.",
+    "example_output": "[Interactive editor interface with cursor position]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-129",
+    "command": "vim -c 'set number' file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in Vim with line numbers enabled.",
+    "example_output": "[Interactive editor interface with line numbers]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-130",
+    "command": "nano -w config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in Nano without wrapping long lines.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-150",
+    "command": "vim -b file.bin",
+    "category": "Editor",
+    "description": "Opens file.bin in Vim in binary mode.",
+    "example_output": "[Interactive editor interface for binary file]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-220",
+    "command": "emacs file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in the Emacs text editor.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/emacs.1.html"
+  },
+  {
+    "id": "cmd-221",
+    "command": "vim -o file1.txt file2.txt",
+    "category": "Editor",
+    "description": "Opens file1.txt and file2.txt in Vim with a horizontal split.",
+    "example_output": "[Interactive editor with split windows]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-222",
+    "command": "nano -B config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in Nano, creating backups on save.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-223",
+    "command": "emacs -nw file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in Emacs in terminal (non-GUI) mode.",
+    "example_output": "[Interactive editor interface in terminal]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/emacs.1.html"
+  },
+  {
+    "id": "cmd-239",
+    "command": "vim -O file1.txt file2.txt",
+    "category": "Editor",
+    "description": "Opens file1.txt and file2.txt in Vim with a vertical split.",
+    "example_output": "[Interactive editor with vertical split windows]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-240",
+    "command": "nano -E config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in Nano, converting tabs to spaces.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-250",
+    "command": "emacs --no-init-file file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in Emacs without loading the init file.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/emacs.1.html"
+  },
+  {
+    "id": "cmd-341",
+    "command": "nano +10 config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in Nano at line 10.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-342",
+    "command": "vim -u NONE file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in Vim without loading any configuration.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-343",
+    "command": "emacs --batch -l script.el",
+    "category": "Editor",
+    "description": "Runs Emacs in batch mode to execute script.el.",
+    "example_output": "[Output of script.el]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/emacs.1.html"
+  },
+  {
+    "id": "cmd-448",
+    "command": "emacs --eval '(find-file \"file.txt\")'",
+    "category": "Editor",
+    "description": "Opens file.txt in Emacs non-interactively via Lisp expression.",
+    "example_output": "[Opens file.txt in Emacs]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/emacs.1.html"
+  },
+  {
+    "id": "cmd-449",
+    "command": "vim -es -S script.vim",
+    "category": "Editor",
+    "description": "Runs Vim in silent mode to execute script.vim.",
+    "example_output": "[Output of script.vim]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-450",
+    "command": "nano -T 4 config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in Nano with tabs set to 4 spaces.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-523",
+    "command": "hexedit file.bin",
+    "category": "Editor",
+    "description": "Opens file.bin in an interactive hexadecimal editor.",
+    "example_output": "[Interactive hex editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/hexedit.1.html"
+  },
+  {
+    "id": "cmd-524",
+    "command": "nano -r 80 config.conf",
+    "category": "Editor",
+    "description": "Opens config.conf in Nano with 80-column line wrapping.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/nano.1.html"
+  },
+  {
+    "id": "cmd-525",
+    "command": "vim -R file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in Vim in read-only mode.",
+    "example_output": "[Interactive read-only editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/vim.1.html"
+  },
+  {
+    "id": "cmd-526",
+    "command": "emacs -Q file.txt",
+    "category": "Editor",
+    "description": "Opens file.txt in Emacs with minimal configuration.",
+    "example_output": "[Interactive editor interface]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/emacs.1.html"
+  }
+]

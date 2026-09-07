@@ -1,0 +1,402 @@
+[
+  {
+    "id": "cmd-017",
+    "command": "chmod 755 script.sh",
+    "category": "Permissions",
+    "description": "Sets script.sh to executable for all, readable/writable for owner.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-018",
+    "command": "chown user:group file.txt",
+    "category": "Permissions",
+    "description": "Changes ownership of file.txt to user and group.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-046",
+    "command": "chmod +x script.sh",
+    "category": "Permissions",
+    "description": "Makes script.sh executable by adding execute permission.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-047",
+    "command": "chown -R user:group /data",
+    "category": "Permissions",
+    "description": "Recursively changes ownership of /data to user and group.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-087",
+    "command": "chmod 644 file.txt",
+    "category": "Permissions",
+    "description": "Sets file.txt to read/write for owner, read-only for others.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-088",
+    "command": "chown -h user symlink",
+    "category": "Permissions",
+    "description": "Changes ownership of symlink to user without affecting the target.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-115",
+    "command": "chmod -R 750 /data",
+    "category": "Permissions",
+    "description": "Recursively sets /data to rwx for owner, rx for group, none for others.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-116",
+    "command": "chown :group file.txt",
+    "category": "Permissions",
+    "description": "Changes group ownership of file.txt to group.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-141",
+    "command": "chmod u+x script.sh",
+    "category": "Permissions",
+    "description": "Adds execute permission for the owner of script.sh.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-142",
+    "command": "chown -R user:group /var/www",
+    "category": "Permissions",
+    "description": "Recursively changes ownership of /var/www to user and group.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-187",
+    "command": "chmod g+w file.txt",
+    "category": "Permissions",
+    "description": "Adds write permission for the group on file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-188",
+    "command": "chown user file.txt",
+    "category": "Permissions",
+    "description": "Changes the owner of file.txt to user.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-189",
+    "command": "chmod o-r file.txt",
+    "category": "Permissions",
+    "description": "Removes read permission for others on file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-190",
+    "command": "chown -R :group /data",
+    "category": "Permissions",
+    "description": "Recursively changes group ownership of /data to group.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-227",
+    "command": "chmod g-x script.sh",
+    "category": "Permissions",
+    "description": "Removes execute permission for the group on script.sh.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-228",
+    "command": "chown -hR user symlink",
+    "category": "Permissions",
+    "description": "Recursively changes ownership of symlink and its target to user.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-245",
+    "command": "chmod 600 file.txt",
+    "category": "Permissions",
+    "description": "Sets file.txt to read/write for owner only.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-246",
+    "command": "chown -v user file.txt",
+    "category": "Permissions",
+    "description": "Changes owner of file.txt to user with verbose output.",
+    "example_output": "changed ownership of 'file.txt' from root to user",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-256",
+    "command": "setfacl -m u:user:rw file.txt",
+    "category": "Permissions",
+    "description": "Grants user read and write permissions on file.txt using ACL.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/setfacl.1.html"
+  },
+  {
+    "id": "cmd-257",
+    "command": "getfacl file.txt",
+    "category": "Permissions",
+    "description": "Displays the access control list (ACL) for file.txt.",
+    "example_output": "user::rw-\nuser:user:rw-\ngroup::r--\nother::r--",
+    "man_reference": "https://man7.org/linux/man-pages/man1/getfacl.1.html"
+  },
+  {
+    "id": "cmd-272",
+    "command": "chgrp group file.txt",
+    "category": "Permissions",
+    "description": "Changes the group ownership of file.txt to group.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chgrp.1.html"
+  },
+  {
+    "id": "cmd-273",
+    "command": "chgrp -R group /data",
+    "category": "Permissions",
+    "description": "Recursively changes group ownership of /data to group.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chgrp.1.html"
+  },
+  {
+    "id": "cmd-274",
+    "command": "setfacl -b file.txt",
+    "category": "Permissions",
+    "description": "Removes all ACL entries from file.txt, restoring default permissions.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/setfacl.1.html"
+  },
+  {
+    "id": "cmd-298",
+    "command": "semanage fcontext -l",
+    "category": "Permissions",
+    "description": "Lists SELinux file context mappings.",
+    "example_output": "/var/log(/.*)? all files system_u:object_r:var_log_t:s0",
+    "man_reference": "https://man7.org/linux/man-pages/man8/semanage.8.html"
+  },
+  {
+    "id": "cmd-299",
+    "command": "restorecon -v /var/log",
+    "category": "Permissions",
+    "description": "Restores default SELinux contexts for /var/log.",
+    "example_output": "Restored context on /var/log",
+    "man_reference": "https://man7.org/linux/man-pages/man8/restorecon.8.html"
+  },
+  {
+    "id": "cmd-300",
+    "command": "getsebool -a",
+    "category": "Permissions",
+    "description": "Lists all SELinux boolean settings.",
+    "example_output": "httpd_enable_homedirs --> off\nssh_sysadm_login --> on",
+    "man_reference": "https://man7.org/linux/man-pages/man8/getsebool.8.html"
+  },
+  {
+    "id": "cmd-333",
+    "command": "chcon -t httpd_sys_content_t /var/www",
+    "category": "Permissions",
+    "description": "Sets SELinux context for /var/www to httpd_sys_content_t.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chcon.1.html"
+  },
+  {
+    "id": "cmd-334",
+    "command": "setsebool -P httpd_enable_homedirs on",
+    "category": "Permissions",
+    "description": "Enables the SELinux boolean httpd_enable_homedirs persistently.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/setsebool.8.html"
+  },
+  {
+    "id": "cmd-361",
+    "command": "setfacl -R -m u:user:rx /data",
+    "category": "Permissions",
+    "description": "Recursively grants user read and execute permissions on /data using ACL.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/setfacl.1.html"
+  },
+  {
+    "id": "cmd-362",
+    "command": "setfacl -x u:user file.txt",
+    "category": "Permissions",
+    "description": "Removes ACL entries for user from file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/setfacl.1.html"
+  },
+  {
+    "id": "cmd-363",
+    "command": "chcon -R -t user_home_t /home/user",
+    "category": "Permissions",
+    "description": "Recursively sets SELinux context for /home/user to user_home_t.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chcon.1.html"
+  },
+  {
+    "id": "cmd-364",
+    "command": "semanage user -l",
+    "category": "Permissions",
+    "description": "Lists SELinux user mappings.",
+    "example_output": "SELinux User MLS/MCS Range Service\nunconfined_u s0-s0:c0.c1023 *",
+    "man_reference": "https://man7.org/linux/man-pages/man8/semanage.8.html"
+  },
+  {
+    "id": "cmd-365",
+    "command": "getfattr -d file.txt",
+    "category": "Permissions",
+    "description": "Displays extended attributes for file.txt.",
+    "example_output": "security.selinux=\"system_u:object_r:user_home_t:s0\"",
+    "man_reference": "https://man7.org/linux/man-pages/man1/getfattr.1.html"
+  },
+  {
+    "id": "cmd-366",
+    "command": "setfattr -n user.comment -v 'Test' file.txt",
+    "category": "Permissions",
+    "description": "Sets a user-defined extended attribute 'user.comment' to 'Test' on file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/setfattr.1.html"
+  },
+  {
+    "id": "cmd-412",
+    "command": "semanage port -l",
+    "category": "Permissions",
+    "description": "Lists SELinux port mappings.",
+    "example_output": "http_port_t tcp 80, 443, 8080",
+    "man_reference": "https://man7.org/linux/man-pages/man8/semanage.8.html"
+  },
+  {
+    "id": "cmd-444",
+    "command": "semanage login -l",
+    "category": "Permissions",
+    "description": "Lists SELinux login mappings.",
+    "example_output": "Login Name SELinux User MLS/MCS Range Service\n__default__ unconfined_u s0-s0:c0.c1023 *",
+    "man_reference": "https://man7.org/linux/man-pages/man8/semanage.8.html"
+  },
+  {
+    "id": "cmd-445",
+    "command": "semanage boolean -l",
+    "category": "Permissions",
+    "description": "Lists SELinux booleans with descriptions.",
+    "example_output": "httpd_enable_homedirs (off , off) Allow httpd to read home directories",
+    "man_reference": "https://man7.org/linux/man-pages/man8/semanage.8.html"
+  },
+  {
+    "id": "cmd-488",
+    "command": "setfacl -d -m u:user:rwx /data",
+    "category": "Permissions",
+    "description": "Sets default ACL for user with rwx permissions on new files in /data.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/setfacl.1.html"
+  },
+  {
+    "id": "cmd-489",
+    "command": "semanage fcontext -a -t httpd_sys_content_t '/var/www(/.*)?'",
+    "category": "Permissions",
+    "description": "Adds an SELinux file context for /var/www and its contents.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/semanage.8.html"
+  },
+  {
+    "id": "cmd-491",
+    "command": "getfattr -n security.selinux file.txt",
+    "category": "Permissions",
+    "description": "Displays the SELinux security context attribute of file.txt.",
+    "example_output": "security.selinux=\"system_u:object_r:user_home_t:s0\"",
+    "man_reference": "https://man7.org/linux/man-pages/man1/getfattr.1.html"
+  },
+  {
+    "id": "cmd-492",
+    "command": "semanage port -a -t http_port_t -p tcp 8080",
+    "category": "Permissions",
+    "description": "Adds TCP port 8080 to SELinux http_port_t for web services.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/semanage.8.html"
+  },
+  {
+    "id": "cmd-493",
+    "command": "aa-status",
+    "category": "Permissions",
+    "description": "Displays the status of AppArmor profiles and processes.",
+    "example_output": "apparmor module is loaded.\n10 profiles are in enforce mode.\n5 processes are in enforce mode.",
+    "man_reference": "https://man7.org/linux/man-pages/man8/aa-status.8.html"
+  },
+  {
+    "id": "cmd-494",
+    "command": "apparmor_parser -R /etc/apparmor.d/usr.sbin.nginx",
+    "category": "Permissions",
+    "description": "Reloads the AppArmor profile for nginx.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man8/apparmor_parser.8.html"
+  },
+  {
+    "id": "cmd-546",
+    "command": "find / -xdev -perm /u+s",
+    "category": "Permissions",
+    "description": "Finds setuid files on the root filesystem, ignoring other mounts.",
+    "example_output": "/usr/bin/sudo\n/usr/bin/passwd",
+    "man_reference": "https://man7.org/linux/man-pages/man1/find.1.html"
+  },
+  {
+    "id": "cmd-547",
+    "command": "chmod -R u-s /data",
+    "category": "Permissions",
+    "description": "Recursively removes setuid permissions from files in /data.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+  },
+  {
+    "id": "cmd-548",
+    "command": "chown -R --from=root user /data",
+    "category": "Permissions",
+    "description": "Recursively changes ownership from root to user for files in /data.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chown.1.html"
+  },
+  {
+    "id": "cmd-549",
+    "command": "setfacl -R -b /data",
+    "category": "Permissions",
+    "description": "Recursively removes all ACLs from files in /data.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/setfacl.1.html"
+  },
+  {
+    "id": "cmd-550",
+    "command": "chcon -u system_u file.txt",
+    "category": "Permissions",
+    "description": "Sets the SELinux user to system_u for file.txt.",
+    "example_output": "[No output if successful]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/chcon.1.html"
+  },
+  {
+    "id": "cmd-599",
+    "command": "aa-complain /etc/apparmor.d/usr.sbin.nginx",
+    "category": "Permissions",
+    "description": "Sets the AppArmor profile for nginx to complain mode.",
+    "example_output": "Setting /etc/apparmor.d/usr.sbin.nginx to complain mode.",
+    "man_reference": "https://man7.org/linux/man-pages/man8/aa-complain.8.html"
+  },
+  {
+    "id": "cmd-600",
+    "command": "aa-enforce /etc/apparmor.d/usr.sbin.nginx",
+    "category": "Permissions",
+    "description": "Sets the AppArmor profile for nginx to enforce mode.",
+    "example_output": "Setting /etc/apparmor.d/usr.sbin.nginx to enforce mode.",
+    "man_reference": "https://man7.org/linux/man-pages/man8/aa-enforce.8.html"
+  }
+]

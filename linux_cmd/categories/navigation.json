@@ -1,0 +1,282 @@
+[
+  {
+    "id": "cmd-001",
+    "command": "cd /var/log",
+    "category": "Navigation",
+    "description": "Changes the current directory to /var/log.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-002",
+    "command": "pwd",
+    "category": "Navigation",
+    "description": "Prints the current working directory.",
+    "example_output": "/home/user",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pwd.1.html"
+  },
+  {
+    "id": "cmd-003",
+    "command": "ls -la",
+    "category": "Navigation",
+    "description": "Lists all files (including hidden) in long format.",
+    "example_output": "drwxr-xr-x 2 user user 4096 May 21 2025 file.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-034",
+    "command": "cd ~",
+    "category": "Navigation",
+    "description": "Changes to the current user's home directory.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-035",
+    "command": "ls -R",
+    "category": "Navigation",
+    "description": "Recursively lists all files and subdirectories.",
+    "example_output": "./subdir:\nfile1.txt file2.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-062",
+    "command": "cd ..",
+    "category": "Navigation",
+    "description": "Moves up one directory level.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-063",
+    "command": "ls -lh",
+    "category": "Navigation",
+    "description": "Lists files in long format with human-readable sizes.",
+    "example_output": "-rw-r--r-- 1 user user 1.2M May 21 2025 file.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-071",
+    "command": "cd -",
+    "category": "Navigation",
+    "description": "Returns to the previous directory.",
+    "example_output": "[No output, changes to previous directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-072",
+    "command": "ls -t",
+    "category": "Navigation",
+    "description": "Lists files sorted by modification time, newest first.",
+    "example_output": "file1.txt file2.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-073",
+    "command": "pwd -P",
+    "category": "Navigation",
+    "description": "Prints the physical current directory, resolving symlinks.",
+    "example_output": "/home/user/realpath",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pwd.1.html"
+  },
+  {
+    "id": "cmd-104",
+    "command": "cd /etc",
+    "category": "Navigation",
+    "description": "Changes the current directory to /etc.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-105",
+    "command": "ls -1",
+    "category": "Navigation",
+    "description": "Lists files in a single column.",
+    "example_output": "file1.txt\nfile2.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-131",
+    "command": "cd /usr/local/bin",
+    "category": "Navigation",
+    "description": "Changes the current directory to /usr/local/bin.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-132",
+    "command": "ls -S",
+    "category": "Navigation",
+    "description": "Lists files sorted by size, largest first.",
+    "example_output": "largefile.txt smallfile.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-151",
+    "command": "cd /tmp",
+    "category": "Navigation",
+    "description": "Changes the current directory to /tmp.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-152",
+    "command": "ls -F",
+    "category": "Navigation",
+    "description": "Lists files with indicators (e.g., / for directories, * for executables).",
+    "example_output": "dir1/ file1.txt*",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-153",
+    "command": "pwd -L",
+    "category": "Navigation",
+    "description": "Prints the logical current directory, preserving symlinks.",
+    "example_output": "/home/user/symlink",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pwd.1.html"
+  },
+  {
+    "id": "cmd-154",
+    "command": "ls -X",
+    "category": "Navigation",
+    "description": "Lists files sorted by file extension.",
+    "example_output": "file.txt file.sh",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-155",
+    "command": "cd /usr/share",
+    "category": "Navigation",
+    "description": "Changes the current directory to /usr/share.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-156",
+    "command": "ls --color=auto",
+    "category": "Navigation",
+    "description": "Lists files with colorized output based on file type.",
+    "example_output": "[Colorized file list]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-157",
+    "command": "ls -i",
+    "category": "Navigation",
+    "description": "Lists files with their inode numbers.",
+    "example_output": "123456 file.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-158",
+    "command": "cd ~user",
+    "category": "Navigation",
+    "description": "Changes to the home directory of user.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-159",
+    "command": "ls -r",
+    "category": "Navigation",
+    "description": "Lists files in reverse order.",
+    "example_output": "file2.txt file1.txt",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-160",
+    "command": "ls -d */",
+    "category": "Navigation",
+    "description": "Lists only directories in the current directory.",
+    "example_output": "dir1/ dir2/",
+    "man_reference": "https://man7.org/linux/man-pages/man1/ls.1.html"
+  },
+  {
+    "id": "cmd-251",
+    "command": "pushd /var/log",
+    "category": "Navigation",
+    "description": "Changes to /var/log and adds current directory to stack.",
+    "example_output": "~/var/log ~",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pushd.1.html"
+  },
+  {
+    "id": "cmd-252",
+    "command": "popd",
+    "category": "Navigation",
+    "description": "Returns to the directory at the top of the stack.",
+    "example_output": "~",
+    "man_reference": "https://man7.org/linux/man-pages/man1/popd.1.html"
+  },
+  {
+    "id": "cmd-253",
+    "command": "dirs -v",
+    "category": "Navigation",
+    "description": "Displays the directory stack with indices vertically.",
+    "example_output": "0 /var/log\n1 ~",
+    "man_reference": "https://man7.org/linux/man-pages/man1/dirs.1.html"
+  },
+  {
+    "id": "cmd-351",
+    "command": "pushd +2",
+    "category": "Navigation",
+    "description": "Rotates the directory stack to make the third entry the current directory.",
+    "example_output": "~/dir3 ~/dir1 ~/dir2",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pushd.1.html"
+  },
+  {
+    "id": "cmd-352",
+    "command": "dirs -c",
+    "category": "Navigation",
+    "description": "Clears the directory stack.",
+    "example_output": "[No output, stack cleared]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/dirs.1.html"
+  },
+  {
+    "id": "cmd-353",
+    "command": "cd -P /path/to/symlink",
+    "category": "Navigation",
+    "description": "Changes to the physical directory resolved from /path/to/symlink.",
+    "example_output": "[No output, changes directory]",
+    "man_reference": "https://man7.org/linux/man-pages/man1/cd.1.html"
+  },
+  {
+    "id": "cmd-451",
+    "command": "cd /proc/$$",
+    "category": "Navigation",
+    "description": "Changes to the /proc directory of the current shell process.",
+    "example_output": "[No output, changes to /proc/<pid>]",
+    "man_reference": "https://man7.org/linux/man-pages/man5/proc.5.html"
+  },
+  {
+    "id": "cmd-452",
+    "command": "dirs -p",
+    "category": "Navigation",
+    "description": "Displays directory stack one entry per line.",
+    "example_output": "~/dir1\n~/dir2",
+    "man_reference": "https://man7.org/linux/man-pages/man1/dirs.1.html"
+  },
+  {
+    "id": "cmd-453",
+    "command": "pushd -n /tmp",
+    "category": "Navigation",
+    "description": "Adds /tmp to directory stack without changing current directory.",
+    "example_output": "~/tmp ~",
+    "man_reference": "https://man7.org/linux/man-pages/man1/pushd.1.html"
+  },
+  {
+    "id": "cmd-454",
+    "command": "cd /dev/shm",
+    "category": "Navigation",
+    "description": "Changes to the shared memory filesystem directory.",
+    "example_output": "[No output, changes to /dev/shm]",
+    "man_reference": "https://man7.org/linux/man-pages/man5/shm.5.html"
+  },
+  {
+    "id": "cmd-455",
+    "command": "tree -if --noreport /etc | grep '\\.conf$'",
+    "category": "Navigation",
+    "description": "Lists all .conf files in /etc without directory tree formatting.",
+    "example_output": "/etc/nginx/nginx.conf\n/etc/sshd/sshd.conf",
+    "man_reference": "https://man7.org/linux/man-pages/man1/tree.1.html"
+  }
+]
