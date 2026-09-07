@@ -25,7 +25,7 @@ async fn main() {
         .layer(cors);
 
     // Define Ip and Port
-    let address: &'static str = "0.0.0.0:3000";
+    let address: &'static str = "0.0.0.0:44521";
     let listener: TcpListener = tokio::net::TcpListener::bind(address).await.unwrap();
 
     println!("Listener on {address}\n");
